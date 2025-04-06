@@ -1,10 +1,10 @@
 
-const Contact=()=>{
+const Company=()=>{
     return(
         <>
-        <h1 align="center">Welcome to Contact Page</h1>
+        <h1 align="center">Welcome to Company Page</h1>
         </>
     )
 }
 
-export default Contact;
+export default Company;

@@ -4,8 +4,9 @@ const Layout=()=>{
     return(
         <>
         <Link to="home">Home</Link> |
-        <Link to="about">About us</Link>  |
-        <Link to="contact">Contact us</Link>  
+        <Link to="company">Company</Link> |
+        <Link to="product">Product</Link>  |
+        <Link to="contact">Contact us</Link>   
 
         <hr size="2" color="red" />
 

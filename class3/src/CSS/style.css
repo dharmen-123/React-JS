@@ -1,0 +1,28 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+
+#logo{
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color:rgb(247, 5, 162);
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bold;
+    gap: 15em;
+    height: 70px;
+}
+.links:hover{
+    background-color: rgba(247, 88, 2, 0.852);
+    border-radius: 10px;
+    padding: 5px;
+}
