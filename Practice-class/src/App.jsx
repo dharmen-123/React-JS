@@ -1,13 +1,9 @@
-import Footer from "./footer";
-import Header from "./header";
-
 
 const App=()=>{
   return(
     <>
-       <h1>Welcome To React Class</h1>
-       < Header/>
-       < Footer/>
+       <h1 align="center">Welcome To {3-2}st React Class</h1>
+          
     </>
   )
 }
