@@ -10,7 +10,13 @@ const App=()=>{
      setinp(values=>({...values,[name]:value}))
      console.log(input);
    }
-  
+   const handlesubmit=async()=>{
+     let api="http://localhost:3000/Form";
+     let res= await axios.post(api,input)
+     console.log(res);
+     alert("succesfull")
+     
+   }
 
   return(
    <>
@@ -23,7 +29,7 @@ const App=()=>{
    <br/><br/>
    Enter city:<input type="text" name="city" onChange={handleinp} />
    <br/><br/>
-   <button>Save</button>
+   <button onClick={handlesubmit}>Save</button>
    </>
   )
 }
