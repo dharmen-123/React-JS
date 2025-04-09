@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import axios from "axios";
 
 const App=()=>{
    const [input , setinp]=useState({})
@@ -10,6 +10,8 @@ const App=()=>{
      setinp(values=>({...values,[name]:value}))
      console.log(input);
    }
+  
+
   return(
    <>
    <h1>Application Form</h1>
