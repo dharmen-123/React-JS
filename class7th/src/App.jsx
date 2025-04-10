@@ -2,7 +2,7 @@ import { useState } from "react";
 import axios from "axios";
 
 const App=()=>{
-   const [input , setinp]=useState({})
+   const [input , setinp] = useState({})
 
    const handleinp=(key)=>{
       let  name=key.target.name;
