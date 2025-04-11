@@ -4,8 +4,8 @@ const Layout=()=>{
     return(
         <>
         <div id="navbar">
-        <Link to="home">Home </Link> |
-        <Link to="insert">Insert </Link> |
+        <Link to="home">Home </Link>
+        <Link to="insert">Insert </Link>
         <Link to="display">Display </Link>
         </div>
        <hr color="red"/>
