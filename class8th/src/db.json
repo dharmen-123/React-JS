@@ -1,0 +1,12 @@
+{
+    "Employe":[
+        {
+            "id":101,
+            "empno":123,
+            "empname":"Dharmendra",
+            "Designation":"manager",
+            "Salary":40000,
+            "City":"Bhopal" 
+        }
+    ]
+}
