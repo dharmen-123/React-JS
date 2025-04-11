@@ -21,11 +21,14 @@ const Insert=()=>{
     }
     return(
         <>
-        <div style={{alignContent:"center" , display:"inline" , justifyContent:"center",border:"1px solid black"}}>
-         <h1>Details Form</h1>
-        Enter Name : <input type="text" name="name" onChange={handleinp} />
+        
+         <div style={{alignContent:"center", margin:"auto",textAlign:"center",
+            fontSize:"20px",backgroundColor:"skyblue",borderRadius:"20px",width:"400px",height:"400px"  ,border:"2px solid black"}}>
+         <h1 align="center">Details Form</h1>
+
+        Enter Name : <input type="text" name="empname" onChange={handleinp} />
         <br/><br/>
-        Enter Id no. : <input type="text" name="idno" onChange={handleinp} />
+        Enter Id no. : <input type="text" name="empno" onChange={handleinp} />
         <br/><br/>
         Enter Designation : <input type="text" name="designation" onChange={handleinp} />
         <br/><br/>
@@ -33,7 +36,7 @@ const Insert=()=>{
         <br/><br/>
         Enter City: <input type="text" name="city" onChange={handleinp} />
         <br/><br/>
-       <button onClick={handlesubmit}>Save</button>
+       <button   onClick={handlesubmit}>Save</button>
        </div>
         </>
     )

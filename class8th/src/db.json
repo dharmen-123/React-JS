@@ -1,12 +1,20 @@
 {
-    "Employe":[
-        {
-            "id":101,
-            "empno":123,
-            "empname":"Dharmendra",
-            "Designation":"manager",
-            "Salary":40000,
-            "City":"Bhopal" 
-        }
-    ]
+  "Employe": [
+    {
+      "id": "101",
+      "empname": "Dharmendra",
+      "empno": 123,
+      "designation": "manager",
+      "salary": 40000,
+      "city": "Bhopal"
+    },
+    {
+      "id": "a859",
+      "empname": "Harsh",
+      "empno": "125",
+      "designation": "officer",
+      "salary": "50000",
+      "city": "radhapuram"
+    }
+  ]
 }

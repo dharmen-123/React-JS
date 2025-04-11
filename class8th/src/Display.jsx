@@ -19,18 +19,18 @@ const Display=()=>{
               <tr>
                 <td>{key.empname}</td>
                 <td>{key.empno}</td>
-                <td>{key.Designation}</td>
-                <td>{key.Salary}</td>
-                <td>{key.City}</td>
+                <td>{key.designation}</td>
+                <td>{key.salary}</td>
+                <td>{key.city}</td>
               </tr>
             </>
         )
       })
     return(
         <>
+        <div >
           <h1>Display Data</h1> <br/>
-          <hr />
-          <table>
+          <table border="2" cellSpacing="10">
             <tr>
                 <th>Emp-name</th>
                 <th>Emp-id</th>
@@ -40,6 +40,7 @@ const Display=()=>{
             </tr>
             {ans}
           </table>
+          </div>
         </>
     )
 
