@@ -8,8 +8,8 @@ const Layout=()=>{
         <Link to="display">Display </Link>
        
        <hr/>
-       
-       {Outlet}
+
+       <Outlet/>
 
        <hr />
       All rights @ Copyright 2025 www.mywebsite.com
