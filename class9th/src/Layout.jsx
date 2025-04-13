@@ -7,7 +7,6 @@ const Layout=()=>{
         <>
            <Topbar/>
            <br/>
-           {/* <hr /> */}
            <Outlet/>
            <hr />
            <Footer/>

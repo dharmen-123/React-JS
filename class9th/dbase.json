@@ -1,13 +1,40 @@
 {
-    "Alumini":[
-        {
-            "id":1,
-            "name":"Dharmendra",
-            "empid":"e001",
-            "mobile":9766584593,
-            "designation":"Manager",
-            "salary":"10.5Cr",
-            "city":"Bhopal"
-        }
-    ]
+  "Alumini": [
+    {
+      "id": 1,
+      "name": "Dharmendra",
+      "empid": "a001",
+      "mobile": 9766584593,
+      "designation": "Manager",
+      "salary": "10.5Cr",
+      "city": "Bhopal"
+    },
+    {
+      "id": "3148",
+      "name": "Harsh Thakre",
+      "empid": "a002",
+      "mobile": "9876879568",
+      "designation": "Supervisor",
+      "salary": "600000",
+      "city": "Jaipur"
+    },
+    {
+      "id": "8e35",
+      "name": "Raj",
+      "empid": "a003",
+      "mobile": "7865446798",
+      "designation": "officer",
+      "salary": "40500",
+      "city": "Pune"
+    },
+    {
+      "id": "cf26",
+      "name": "Avanish Singh",
+      "empid": "a004",
+      "mobile": "7479856386",
+      "designation": "Manager",
+      "salary": "70000",
+      "city": "Riva"
+    }
+  ]
 }
