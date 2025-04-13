@@ -3,7 +3,9 @@
 const  Footer=()=>{
     return(
         <>
-        <h1>ascfdgdsfsderoiuhr</h1>
+          <div id="footer">
+           Copyright @  www.Aluminidata.com  All  rights  reserverd  2025
+          </div>
         </>
     )
 }
