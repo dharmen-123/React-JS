@@ -10,8 +10,7 @@ import Contact from "./Pages/Contact.jsx"
 
 const App=()=>{
     return(
-        <>
-          
+        <> 
           <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Layout/>}>

@@ -6,9 +6,8 @@
             "empid":"e001",
             "mobile":9766584593,
             "designation":"Manager",
-            "package":"10.5Cr",
-            "city":"Bhopal",
-            "company":"Google"
+            "salary":"10.5Cr",
+            "city":"Bhopal"
         }
     ]
 }
