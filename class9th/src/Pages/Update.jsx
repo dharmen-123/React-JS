@@ -3,9 +3,14 @@ import axios from "axios";
 import { ToastContainer, toast } from 'react-toastify';
 import Table from 'react-bootstrap/Table';
 import { MdDelete } from "react-icons/md";
+import { MdEditSquare } from "react-icons/md";
+import { useNavigate } from "react-router-dom";
 
 const Update=()=>{
     const [mydata , setdata]=useState([]);
+
+    const navigate = useNavigate();
+
     const Loaddata=async()=>{
       let api="http://localhost:3000/Alumini";
       const response = await axios.get(api);
@@ -23,7 +28,11 @@ const Update=()=>{
           toast.error("Data successfully delete")
           Loaddata();
     }
-    
+
+    const myEdit=(id)=>{
+      navigate(`/edit/${id}`)
+    }
+
      let sno=0;
     const ans = mydata.map((key)=>{
       sno++;
@@ -37,7 +46,8 @@ const Update=()=>{
               <td>{key.designation}</td>
               <td>{key.salary}</td>
               <td>{key.city}</td>
-              <td><MdDelete  onClick={()=>{myDel(key.id)}}/></td>
+              <td><MdDelete className="deleteicon"  onClick={()=>{myDel(key.id)}}/></td>
+              <td><MdEditSquare className="editicon" onClick={()=>{myEdit(key.id)}}/></td>
           </tr>
           </>
       )
@@ -56,6 +66,7 @@ const Update=()=>{
           <th>Salary</th>
           <th>Working City</th>
           <th>Delete</th>
+          <th>Edit</th>
         </tr>
         </thead>
         <tbody>

@@ -26,6 +26,24 @@
       "designation": "Team Head",
       "salary": "75500",
       "city": "Jharkhand"
+    },
+    {
+      "id": "ce5f",
+      "name": "Avanish Singh",
+      "empid": "a003",
+      "mobile": "8796844484",
+      "designation": "Junior Developer",
+      "salary": "65500",
+      "city": "Pune"
+    },
+    {
+      "id": "80b7",
+      "name": "Atul Kumar",
+      "empid": "a004",
+      "mobile": "8876979896",
+      "designation": "Junior Editor",
+      "salary": "40000",
+      "city": "Chennai"
     }
   ]
 }

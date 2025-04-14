@@ -56,3 +56,11 @@
     /* text-align: center; */
     box-shadow: 5px 5px 15px orange,-5px -5px 15px orange;
 }
+.deleteicon{
+    font-size:30px;
+    color:red;
+}
+.editicon{
+    color:blue;
+    font-size:32px;
+}
