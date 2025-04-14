@@ -1,7 +1,7 @@
 {
   "Alumini": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Dharmendra",
       "empid": "a001",
       "mobile": 9766584593,
@@ -19,22 +19,13 @@
       "city": "Jaipur"
     },
     {
-      "id": "8e35",
-      "name": "Raj",
-      "empid": "a003",
-      "mobile": "7865446798",
-      "designation": "officer",
-      "salary": "40500",
-      "city": "Pune"
-    },
-    {
-      "id": "cf26",
-      "name": "Avanish Singh",
-      "empid": "a004",
-      "mobile": "7479856386",
-      "designation": "Manager",
-      "salary": "70000",
-      "city": "Riva"
+      "id": "d3c6",
+      "name": "Amit Mehta",
+      "empid": "a005",
+      "mobile": "9738377171",
+      "designation": "Team Head",
+      "salary": "75500",
+      "city": "Jharkhand"
     }
   ]
 }

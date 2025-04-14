@@ -40,3 +40,19 @@
     box-shadow: inset 8px 8px 15px rgb(115, 155, 196),inset -8px -8px 15px rgb(115, 155, 196);;
 
 }
+
+#searchdata{
+    margin:auto;
+    width:500px;
+
+}
+.aluminiS{
+    border: 2px solid rgb(247, 19, 129);
+    border-radius: 10px;
+    width: 380px;
+    margin:auto;
+    padding: 20px;
+    align-items: center;
+    /* text-align: center; */
+    box-shadow: 5px 5px 15px orange,-5px -5px 15px orange;
+}
