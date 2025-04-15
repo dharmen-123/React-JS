@@ -1,12 +1,12 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Layout from "./Layout";
 import Home from "./Pages/Home.jsx";
-import Insert from "./Pages/Insert.jsx"
-import Display from "./Pages/Display.jsx"
-import Search from "./Pages/Search.jsx"
-import Update from "./Pages/Update.jsx"
-import Contact from "./Pages/Contact.jsx"
-import Edit from "./Pages/Edit.jsx"
+import Insert from "./Pages/Insert.jsx";
+import Display from "./Pages/Display.jsx";
+import Search from "./Pages/Search.jsx";
+import Update from "./Pages/Update.jsx";
+import Contact from "./Pages/Contact.jsx";
+import Edit from "./Pages/Edit.jsx";
 
 const App=()=>{
     return(
@@ -21,7 +21,7 @@ const App=()=>{
                  <Route path="search" element={<Search/>}/>
                  <Route path="update" element={<Update/>}/>
                  <Route path="contact" element={<Contact/>}/>
-                 <Route path="edit" element={<Edit/>}/>
+                 <Route path="myedit/:id" element={<Edit/>}/>
                 </Route>
             </Routes>
           </BrowserRouter>

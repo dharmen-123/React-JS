@@ -5,20 +5,19 @@ import {useState , useEffect} from 'react';
 import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
 
-
 const Edit=()=>{
     const {id}=useParams();
      const [editdata , setdata] = useState({});
      
      const loadData=async()=>{
-          let api=`http://localhost:3000/Alumini/${id}`;
-          const respon=await axios.get(api);
-          console.log(respon.data);
-          setdata(respon.data);
-     }
-         useEffect(()=>{
-            loadData();
-         },[])
+        let api=`http://localhost:3000/Alumini/${id}`;
+        const resposne = await axios.get(api);
+        console.log(resposne.data);
+        setdata(resposne.data);
+       }
+     useEffect(()=>{
+        loadData();
+       }, []);
 
      const handledata=(e)=>{
         let name=e.target.name;
@@ -29,7 +28,7 @@ const Edit=()=>{
       
      const handlesubmit=async()=>{
         e.preventDefault();
-         let api=`http://localhost:3000/Alumini/${id}`;
+    let api=`http://localhost:3000/Alumini/${id}`;
          let response = await axios.put(api ,editdata);
          console.log(response.data)
          toast.Warning("Record Update Successfully👍",{

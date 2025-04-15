@@ -30,7 +30,7 @@ const Update=()=>{
     }
 
     const myEdit=(id)=>{
-      navigate(`/edit/${id}`)
+      navigate(`/myedit/${id}`)
     }
 
      let sno=0;
