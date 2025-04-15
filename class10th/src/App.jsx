@@ -3,7 +3,6 @@ import Comp1 from "./Comp1";
 
 const App=()=>{
     const [user , setdata] = useState("Dharmendra");
-
   return(
     <>
        <h1>Welcome !!! {user}</h1>
