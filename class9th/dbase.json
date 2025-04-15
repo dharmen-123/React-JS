@@ -6,7 +6,7 @@
       "empid": "a001",
       "mobile": 9766584593,
       "designation": "Manager",
-      "salary": "10.5Cr",
+      "salary": "20.5Cr",
       "city": "Bhopal"
     },
     {
@@ -15,7 +15,7 @@
       "empid": "a002",
       "mobile": "9876879568",
       "designation": "Supervisor",
-      "salary": "600000",
+      "salary": "60000",
       "city": "Jaipur"
     },
     {
@@ -33,17 +33,17 @@
       "empid": "a003",
       "mobile": "8796844484",
       "designation": "Junior Developer",
-      "salary": "65500",
+      "salary": "60500",
       "city": "Pune"
     },
     {
       "id": "80b7",
       "name": "Atul Kumar",
       "empid": "a004",
-      "mobile": "8876979896",
-      "designation": "Junior Editor",
-      "salary": "40000",
-      "city": "Chennai"
+      "mobile": "8876979897",
+      "designation": "Content Writer",
+      "salary": "45000",
+      "city": "Kolkata"
     }
   ]
 }

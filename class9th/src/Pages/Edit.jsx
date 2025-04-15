@@ -11,7 +11,7 @@ const Edit=()=>{
      
      const loadData=async()=>{
         let api=`http://localhost:3000/Alumini/${id}`;
-        const resposne = await axios.get(api);
+        const resposne = await  axios.get(api);
         console.log(resposne.data);
         setdata(resposne.data);
        }
@@ -27,13 +27,13 @@ const Edit=()=>{
      }
       
      const handlesubmit=async()=>{
-        e.preventDefault();
-    let api=`http://localhost:3000/Alumini/${id}`;
-         let response = await axios.put(api ,editdata);
-         console.log(response.data)
-         toast.Warning("Record Update Successfully👍",{
-        position:"top-middle"
-     });
+        let api=`http://localhost:3000/Alumini/${id}`;
+        const response =await axios.put(api ,editdata);
+         console.log(response.data);
+       
+         toast.warning("Record Update Successfully👍",{
+          position:"top-center"
+         })
      }
     return(
         <>
@@ -64,7 +64,7 @@ const Edit=()=>{
         <Form.Control type="text" name="city" value={editdata.city} onChange={handledata} />
       </Form.Group>
     
-      <Button variant="primary" type="submit" onClick={handlesubmit} >
+      <Button variant="primary" type="button" onClick={handlesubmit} >
         Submit
       </Button>
     </Form>
