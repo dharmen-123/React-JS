@@ -3,9 +3,7 @@ const App=()=>{
   return(
     <>
     <h1>Welcome !!!!</h1>
-     <Cybrom>
-      Hello
-      </Cybrom>
+    <Cybrom />
     </>
   )
 }
