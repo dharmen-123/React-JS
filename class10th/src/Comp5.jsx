@@ -10,4 +10,5 @@ const Comp5=()=>{
     )
 }
 
+
 export default Comp5;
