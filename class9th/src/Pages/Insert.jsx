@@ -30,6 +30,7 @@ const Insert=()=>{
      toast.success("Data Successfully Saved👍")
      }
     return(
+    
         <>
          <Form className="insertform">
          <h3 align="center">Alumini from</h3>
@@ -67,5 +68,5 @@ const Insert=()=>{
     )
 }
 
-
+  
 export default Insert;
