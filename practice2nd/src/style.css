@@ -1,0 +1,13 @@
+
+#navbars{
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+
+    .me-auto{
+        display:flex;
+        justify-content:space-evenly;
+        align-items:center;
+        gap:40px;
+    }
+}
