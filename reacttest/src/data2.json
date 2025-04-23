@@ -1,0 +1,28 @@
+{
+  "Emplyoe": [
+    {
+      "id": "1",
+      "empid": "a001",
+      "name": "Dharmendra",
+      "designation": "manager",
+      "department": "HR",
+      "basicsalary": 500000
+    },
+    {
+      "id": "3",
+      "empid": "a002",
+      "name": "Harsh",
+      "designation": "manager",
+      "department": "CR",
+      "basicsalary": 38000
+    },
+    {
+      "id": "332d",
+      "empid": "a003",
+      "name": "Atul Kumar",
+      "designation": "Manager",
+      "department": "TNP",
+      "basicsalary": "35000"
+    }
+  ]
+}

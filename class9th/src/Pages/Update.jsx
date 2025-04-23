@@ -28,11 +28,9 @@ const Update=()=>{
           toast.error("Data successfully delete")
           Loaddata();
     }
-
     const myEdit=(id)=>{
       navigate(`/myedit/${id}`)
     }
-
      let sno=0;
     const ans = mydata.map((key)=>{
       sno++;
