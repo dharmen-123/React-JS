@@ -1,4 +1,5 @@
 import { useState , useMemo } from "react";
+import Number from "./Number";
 
 const App=()=>{
 
@@ -16,7 +17,7 @@ const App=()=>{
     <button onClick={()=>{setsub(sub-1)}}>Subtraction</button>
     <hr />
     <h1>Multiplication : {myMulti}</h1>
-    
+    <Number/>
     </>
   )
 }
