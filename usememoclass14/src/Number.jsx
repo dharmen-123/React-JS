@@ -1,11 +1,11 @@
 import { useState, useMemo } from "react";
 
 const Number=()=>{
-    const [mynum , setNum]=usestate("")
-    const [myname , setName]=usestate("")
+    const [mynum , setNum ] =useState("")
+    const [myname , setName]=useState("")
 
        function myMulti(){
-        for(var i=0; i<10000000;i++){}
+        for(var i=0; i<100000000;i++){}
         return mynum*2;
        }
     return(
