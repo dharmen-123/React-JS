@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+
 const Render=()=>{
    const [name , setName]=useState("");
    const cntRef=useRef(0);
@@ -11,10 +12,10 @@ const Render=()=>{
         <>
         Enter Your name: <input type="text"  value={name}  
         onChange={(e)=>{setName(e.target.value)}}/>
-        <h1>My render Count :{cntRef}</h1>
+         <h1>My Render count : {cntRef}</h1>
+
         </>
     )
 }
-
 
 export default Render;
