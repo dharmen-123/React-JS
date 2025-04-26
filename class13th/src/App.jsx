@@ -1,5 +1,4 @@
 import { useReducer } from "react";
-import Render from "./Render";
 
 const App=()=>{
  const myfun=(state ,action)=>{
@@ -23,8 +22,8 @@ const App=()=>{
       <h1>Welcome</h1>
       <button onClick={()=>{dispatch("Increment")}}>Increment</button>
       <h1>{count}</h1>     
-      <button onClick={()=>{dispatch("Decrement")}}>Decrement</button>     
-      {/* <Render/> */}
+      <button onClick={()=>{dispatch("Decrement")}}>Decrement</button>    
+       
     </>
   )
 }
