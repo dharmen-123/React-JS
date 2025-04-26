@@ -17,16 +17,13 @@ const App=()=>{
      }
  }
   const [count , dispatch] = useReducer(myfun ,0);
-  return(
+  return(   
     <>
       <h1>Welcome</h1>
-      <button onClick={()=>{dispatch("Increment")}}>Increment</button>
+      <button onClick={()=>{dispatch("Increment")}}>Increment</button>                
       <h1>{count}</h1>     
-      <button onClick={()=>{dispatch("Decrement")}}>Decrement</button>    
-       
+      <button onClick={()=>{dispatch("Decrement")}}>Decrement</button>   
     </>
   )
 }
-
-
 export default App;
