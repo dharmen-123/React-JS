@@ -3,6 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const colorSlice = createSlice({
     name:"mycolor",
     initialState:{
+        
         color:"yellow"
     },
     reducers:{
