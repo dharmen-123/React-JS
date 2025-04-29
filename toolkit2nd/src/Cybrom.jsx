@@ -8,8 +8,8 @@ const Cybrom=()=>{
         <>
          <h1>Welocme to </h1>
          <button onClick={()=>{dispatch(changecolor())}}>Change</button>
-
-         <div style={{width:"400px",height:"400px", backgroundColor:newclr}}>
+          <br/><br />
+         <div style={{width:"300px",height:"300px", backgroundColor:newclr}}>
 
          </div>
         </>
