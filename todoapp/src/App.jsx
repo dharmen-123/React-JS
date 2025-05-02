@@ -5,6 +5,7 @@ const App=()=>{
   const [val, setval]=useState("");
   const data = useSelector(state=>state.todo.task);
   const dispatch = useDispatch();
+
   console.log(data);
   
   let sno=0;
