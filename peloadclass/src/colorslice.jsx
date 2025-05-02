@@ -3,11 +3,11 @@ import { createSlice } from "@reduxjs/toolkit";
 const colorslice = createSlice({
     name:"mycolor",
     initialState:{
-        color:"pink"
+        work:[]
     },
     reducers:{
         changecolor:(state, actions)=>{
-            state.color=actions.payload
+            state.work.push(actions.payload);
         }
     }
 })
