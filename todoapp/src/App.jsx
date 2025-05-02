@@ -17,13 +17,13 @@ const App=()=>{
         <td>{sno}</td>
         <td>{key.task}</td>
         <td>
-          <button onClick={()=>{dispatch(removeTask({id:key.id}))}}>Complete</button>
+          <button onClick={()=>{dispatch(completeTask({id:key.id}))}}>Complete</button>
           </td>
         <td>
-          <button onClick={()=>{dispatch(removeIDtask({id:index}))}}>Delete</button>
+          <button onClick={()=>{dispatch(removeTask({id:key.id}))}}>Delete</button>
           </td>
           <td>
-          <button onClick={()=>{dispatch(removeIDtask({id:index}))}}>Uncomplete</button>
+          <button onClick={()=>{dispatch(uncompleteTask({id:index}))}}>Uncomplete</button>
           </td>
        </tr>
       </>
