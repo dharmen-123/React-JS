@@ -17,10 +17,13 @@ const App=()=>{
         <td>{sno}</td>
         <td>{key.task}</td>
         <td>
-          <button onClick={()=>{dispatch(removeTask({id:key.id}))}}>Delete</button>
+          <button onClick={()=>{dispatch(removeTask({id:key.id}))}}>Complete</button>
           </td>
         <td>
-          <button onClick={()=>{dispatch(removeIDtask({id:index}))}}>DelId</button>
+          <button onClick={()=>{dispatch(removeIDtask({id:index}))}}>Delete</button>
+          </td>
+          <td>
+          <button onClick={()=>{dispatch(removeIDtask({id:index}))}}>Uncomplete</button>
           </td>
        </tr>
       </>
@@ -35,12 +38,11 @@ const App=()=>{
         <button onClick={()=>{dispatch(addTask({id:Date.now(), task:val}))}}>Add</button>
 
         <hr />
-        <table>
+        <table border="1">
           <tbody>
          <tr>
           <th>Sno</th>
-          <th>Task</th>
-          <th></th>
+          <th colSpan="3">Task</th>
           </tr>
           </tbody>
           <tbody>

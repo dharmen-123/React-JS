@@ -10,15 +10,25 @@ const todoSlice= createSlice({
             state.task.push(actions.payload);
         },
         removeTask:(state , actions)=>{
-            state.task = state.task.filter(item=>item.id!=actions.payload)
-            console.log(actions.payload.id);
-            
+            state.task = state.task.filter(key=>key.id!=actions.payload.id);
+            // console.log(actions.payload.id);           
         },
-        removeIDtask:(state,actions)=>{
-            state.task.splice(actions.payload.id, 1);
+        completeTask:(state , actions)=>{
+            for (var i=0 ; i<state.task.length;i++){
+                if(state.task[i]==actions.payload.id){
+                    state.task[i].status=true;
+                }
+            }
+        },
+        uncompleteTask:(state , actions)=>{
+            for (var i=0 ; i<state.task.length;i++){
+                if(state.task[i]==actions.payload.id){
+                    state.task[i].status=true;
+                }
+            }
         }
     
     }
 })
-export const {addTask , removeTask , removeIDtask} = todoSlice.actions;
+export const {addTask , removeTask , uncompleteTask , completeTask} = todoSlice.actions;
 export default todoSlice.reducer;
