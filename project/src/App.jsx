@@ -1,6 +1,4 @@
 
-
-
 const App=()=>{
   return(
     <>
