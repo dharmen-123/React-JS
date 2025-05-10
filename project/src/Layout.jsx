@@ -7,13 +7,12 @@ const Layout=()=>{
     return(
         <>
           <Header/>
-          <hr color="black"/>
+          {/* <hr color="black"/> */}
           <Outlet/>
-          <hr color="black"/>
+          {/* <hr color="black"/> */}
           <Footer/>
         </>
     )
 }
-
 
 export default Layout;

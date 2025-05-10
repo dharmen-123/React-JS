@@ -1,0 +1,30 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.navlinks{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    align-content:center;
+    gap:100px;
+
+
+}
+#navbar{
+  
+    width:100%;
+    height:70px;
+    background-color:#3d251e;
+    font-size:25px;
+    font-weight:bold;
+        
+}
+.weblogo{
+    color:red;
+    font-size:50px;
+}
+/* .me-auto Nav.Link{
+    color:white;
+} */
