@@ -25,6 +25,13 @@
     color:red;
     font-size:50px;
 }
-/* .me-auto Nav.Link{
-    color:white;
-} */
+
+.homeProduct
+{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+}
