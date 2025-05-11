@@ -17,7 +17,10 @@
 #navbar {
 
     width: 100%;
+    position:fixed;
+    top:0%;
     height: 70px;
+    z-index: 888;
     background-color: #3d251e;
     font-size: 25px;
     font-weight: bold;

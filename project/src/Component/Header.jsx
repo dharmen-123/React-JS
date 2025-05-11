@@ -5,8 +5,15 @@ import { Link} from "react-router-dom"
 import { FaCartArrowDown } from "react-icons/fa";
 import weblogo from "../Image/copy.png";
 import Form from 'react-bootstrap/Form';
+import { useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 
 const Header=()=>{
+  const navigate = useNavigate();
+  const cartData= useSelector(state=>state.mycart.cart);
+  console.log(cartData);
+  const cartLength=cartData.length;
+
     return(
         <>
          <Navbar>
@@ -27,9 +34,10 @@ const Header=()=>{
             />
             <div id="lasticons">
             <button>Login</button>
-
-            
-            <FaCartArrowDown style={{alignItem:"center" , fontSize:"35px" , color:"white" , padding:"0px"}} />
+             <div style={{display:"flex" , justifyContent:"center",margin:"-5px", color:"orange"}}>
+             {cartLength }
+            <FaCartArrowDown onClick={()=>{navigate("/mycart")}} style={{cursor:"pointer",alignItem:"center" , fontSize:"35px" , color:"white" , marginLeft:"-10px"}} />
+            </div>
             </div>
         </Container>
       </div>
