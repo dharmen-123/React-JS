@@ -27,6 +27,8 @@ const Header=()=>{
             />
             <div id="lasticons">
             <button>Login</button>
+
+            
             <FaCartArrowDown style={{alignItem:"center" , fontSize:"35px" , color:"white" , padding:"0px"}} />
             </div>
         </Container>
