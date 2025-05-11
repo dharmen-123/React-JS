@@ -21,7 +21,13 @@
     background-color: #3d251e;
     font-size: 25px;
     font-weight: bold;
-
+ 
+    #lasticons{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        gap:50px;
+    }
 }
 
 .weblogo {
@@ -34,12 +40,14 @@
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 20px;
     justify-content: flex-start;
+
+  
 }
 
 footer.footer {
-    background-color: #000;
+    background-color: #251001ef;
     color: #fff;
     /* padding-top: 3rem; */
     /* padding-bottom: 2rem; */

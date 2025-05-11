@@ -1,7 +1,56 @@
 {
     "Fashion":[
         {
+            "id":1,
+            "name":"Alba Leather Men's Analog Wristwatch",
+            "description":"Dial Color: Blue, Case Shape: Round, Dial Glass Material: Mineral Band Color: Brown, Band Material: Leather, Analog Stainless Steel, Case Diameter: 43.5 millimeters",
+            "image":"https://m.media-amazon.com/images/I/61rlrLdT+wL._SX679_.jpg",
+            "category":"Watches",
+            "price":6750
+        },
+        {
             "id":2,
+            "name":"Royal Raw Silk Embroidery Prince Suit",
+            "description":"Look effortlessly stylish by wearing this pair of Shoes featuring an eye-catching design and a refined appeal",
+            "image":"https://i.pinimg.com/736x/84/26/9b/84269b26ec0aad1a5149420212dc37a2.jpg",
+            "category":"Blazer",
+            "price":15899
+        },
+        {
+            "id":3,
+            "name":"Red Chief Genuine Leather Shoe",
+            "description":" Red Chief Genuine Leather Derby Lace Up |Formal Shoes for Men for Office | TPR Sole|",
+            "image":"https://m.media-amazon.com/images/I/812NCj4i0UL._SY695_.jpg",
+            "category":"Shoes",
+            "price":2160
+        },
+        
+        {
+            "id":4,
+            "name":"Royal Raw Silk Embroidery Prince Suit",
+            "description":"Look effortlessly stylish by wearing this pair of Shoes featuring an eye-catching design and a refined appeal|",
+            "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX87BPNVpDXHeex9NDA1gsS3IfTfm7mGWv47FYsl2M0DzZX6VK4NRZPtM25WijtPiGE9U&usqp=CAU",
+            "category":"Blazer",
+            "price":7500
+        },
+        {
+            "id":5,
+            "name":"Silk Embreded designer Suit Cream",
+            "description":" Look effortlessly stylish by wearing this pair of Shoes featuring an eye-catching design and a refined appeal.",
+            "image":"https://i.pinimg.com/736x/db/51/0e/db510eb109ca1a872df1c3d404507ba5.jpg",
+            "category":"Blazer",
+            "price":11999
+        },
+        {
+            "id":6,
+            "name":"Casio Edifice EFR-539L-7CVUDF White Analog",
+            "description":" Casio Edifice EFR-539L-7CVUDF White Analog Dial Brown Leather Band Men's Watch Chronograph 100M Water Resistant EX306",
+            "image":"https://m.media-amazon.com/images/I/61levca36NL._SX679_.jpg",
+            "category":"Watches",
+            "price":9599
+        },
+        {
+            "id":7,
             "name":"STANPHORD Mens Dynamic Formal Shoes",
             "description":" Shinny Glossy Patent | Perfect for Formal Wear, Business Casual, and Parties|",
             "image":"https://m.media-amazon.com/images/I/71cQOeemzQL._SY695_.jpg",
@@ -9,20 +58,71 @@
             "price":999
         },
         {
-            "id":3,
-            "name":"Red Chief Leather Shoe",
-            "description":" Red Chief Genuine Leather Derby Lace Up |Formal Shoes for Men for Office | TPR Sole|",
-            "image":"https://m.media-amazon.com/images/I/812NCj4i0UL._SY695_.jpg",
+            "id":8,
+            "name":"Velvet Dreams: The Santa-Inspired Luxe Jacket",
+            "description":"red velvet jacket, designed with a nod to Santa Claus’ timeless charm. Crafted from rich, quilted velvet and adorned with sparkling ",
+            "image":"https://i.pinimg.com/736x/14/ef/7e/14ef7e4108bda06847d586a48f4725ea.jpg",
+            "category":"Blazer",
+            "price":9250
+        },
+        
+        {
+            "id":9,
+            "name":"P PHILIP Sky-Dweller RLX Luxury Watch",
+            "description":" P PHILIP Sky-Dweller RLX Luxury Watch, Stainless Steel Band, Blue Dial, Fluted Bezel, Date Display.",
+            "image":"https://m.media-amazon.com/images/I/61L4D4YGq7L._SX679_.jpg",
+            "category":"Watches",
+            "price":9999
+        },
+        {
+            "id":10,
+            "name":"Texudo suit with trend fashion Chochlate Black ",
+            "description":"Elevate your formal wardrobe with the Peter England Elite chochlate black blazer. Crafted from a premium blend of polyester and spandex, this slim-fit blazer offers both style and comfort",
+            "image":"https://i.pinimg.com/736x/c8/81/ec/c881ec2f1a03a800b019547aeda9db98.jpg",
+            "category":"Blazer",
+            "price":6850
+        },
+        {
+            "id":11,
+            "name":"Bata Men Pull On Formal Attire Shoes",
+            "description":" Look effortlessly stylish by wearing this pair of Shoes featuring an eye-catching design and a refined appeal.",
+            "image":"https://m.media-amazon.com/images/I/813AAA-JKNL._SX695_.jpg",
             "category":"Shoes",
             "price":2160
         },
         {
-            "id":3,
-            "name":"Bata Men Pull On Formal Shoes",
-            "description":" Look effortlessly stylish by wearing this pair of Shoes featuring an eye-catching design and a refined appeal. A perfect choice to flaunt a classy style wherever you go.",
-            "image":"https://m.media-amazon.com/images/I/813AAA-JKNL._SX695_.jpg",
+           "id":12,
+            "name":"Casio EDifice EFR-539L-5AVUDF Brown Analog",
+            "description":"Casio EDifice EFR-539L-5AVUDF Brown Analog Dial Brown Leather Band Men's Watch Chronograph 100M Water Resistant EX194|",
+            "image":"https://m.media-amazon.com/images/I/61qtMNv9yML._SX679_.jpg",
+            "category":"Watches",
+            "price":10495
+        },
+        {
+           "id":13,
+            "name":"STANPHORD Mens Pinnacle Pulse Boots",
+            "description":" Chelsea Solid High Top Regular Chukka Zipper Casual Semi Formal Shoes without Laces | Perfect for Parties",
+            "image":"https://m.media-amazon.com/images/I/71ZTcolUTDL._SY695_.jpg",
             "category":"Shoes",
-            "price":2160
+            "price":1599
+        },
+        
+        {
+            "id":4,
+            "name":"FAUSTO Men Formal Pull-On Shoes",
+            "description":"Formal Shoes - This is stylish, comfortable and highly fashionable shoe. Crafted with high quality material|",
+            "image":"https://m.media-amazon.com/images/I/61bIb1xXKvL._AC_CR0%2C0%2C0%2C0_SX615_SY462_.jpg",
+            "category":"Shoes",
+            "price":1350
+        },
+        {
+            "id":5,
+            "name":"Men's suit, welding suit, bespoke suit for man",
+            "description":"slim fit blazer in a rich brown hue. Crafted from a blend of polyester and spandex, this textured blazer promises both comfort and style",
+            "image":"https://i.pinimg.com/736x/45/f7/11/45f711c4181ea77cc90df10f9c3fd375.jpg",
+            "category":"Blazer",
+            "price":5780
         }
     ]
 }
+

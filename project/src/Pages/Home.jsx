@@ -30,12 +30,12 @@ const Home=()=>{
     const ans= mydata.map((key)=>{
         return(
             <>
-                 <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={key.image} />
-      <Card.Body>
+                 <Card style={{ width: '20rem' , color:"white" , boxShadow:"-5px -5px 15px  3px #3d251e", borderRadius:"20px" }}>
+      <Card.Img variant="top" src={key.image} style={{height:"300px", borderRadius:"20px"}} />
+      <Card.Body style={{backgroundColor:"#5b3e31", borderRadius:"20px"}}>
         <Card.Title>{key.name}</Card.Title>
         <Card.Text>
-          {key.description}
+          {/* {key.description} */}
         </Card.Text>
         <h3> Price : {key.price}</h3>
         <Button variant="primary"
@@ -82,10 +82,11 @@ const Home=()=>{
       </Carousel.Item>
     </Carousel> 
         <br/>
-            <h1>Our latest Product</h1>
+            {/* <h1>Our latest Product</h1> */}
           <div className='homeProduct'>
           {ans}
           </div>
+
            <CardGroup>
       <Card>
         <Card.Img variant="top" src={img1} />
@@ -129,48 +130,7 @@ const Home=()=>{
         </Card.Footer>
       </Card>
     </CardGroup>
-     <CardGroup>
-      <Card>
-        <Card.Img variant="top" src="holder.js/100px160" />
-        <Card.Body>
-          <Card.Title>Card title</Card.Title>
-          <Card.Text>
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This content is a little bit longer.
-          </Card.Text>
-        </Card.Body>
-        <Card.Footer>
-          <small className="text-muted">Last updated 3 mins ago</small>
-        </Card.Footer>
-      </Card>
-      <Card>
-        <Card.Img variant="top" src="holder.js/100px160" />
-        <Card.Body>
-          <Card.Title>Card title</Card.Title>
-          <Card.Text>
-            This card has supporting text below as a natural lead-in to
-            additional content.
-          </Card.Text>
-        </Card.Body>
-        <Card.Footer>
-          <small className="text-muted">Last updated 3 mins ago</small>
-        </Card.Footer>
-      </Card>
-      <Card>
-        <Card.Img variant="top" src="holder.js/100px160" />
-        <Card.Body>
-          <Card.Title>Card title</Card.Title>
-          <Card.Text>
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This card has even longer content than the
-            first to show that equal height action.
-          </Card.Text>
-        </Card.Body>
-        <Card.Footer>
-          <small className="text-muted">Last updated 3 mins ago</small>
-        </Card.Footer>
-      </Card>
-    </CardGroup>
+     
         </>
     )
 }
