@@ -1,20 +1,28 @@
 {
     "Fashion":[
         {
-            "id":1,
-            "name":"Vibez by Lifelong Xena Smartwatch for Women",
-            "description":"Vibez by Lifelong Xena Smartwatch for Women with HD Display| ECG+PPG|Body Temprature|24x7 Heart Rate & SpO2 Tracking| Sports Mode|IP68|10 Days Battery Backup(VBSWW126, Gold)",
-            "image":"https://m.media-amazon.com/images/I/81Tj+-rVmUL._SL1500_.jpg",
-            "category":"women",
-            "price":1380
+            "id":2,
+            "name":"STANPHORD Mens Dynamic Formal Shoes",
+            "description":" Shinny Glossy Patent | Perfect for Formal Wear, Business Casual, and Parties|",
+            "image":"https://m.media-amazon.com/images/I/71cQOeemzQL._SY695_.jpg",
+            "category":"Shoes",
+            "price":999
         },
         {
-            "id":2,
-            "name":"Vibez by Lifelong Bold Smartwatch For Men ",
-            "description":"Vibez by Lifelong Bold Smartwatch For Men Bluetooth Calling 1.32 HD Display|24x7 Heart Rate & SpO2 Tracking|Sports Mode|Sleep Monitor|IP67|7 days Battery Backup (VBSWM999, 1 Year Manufacturer Warranty, Black)",
-            "image":"https://m.media-amazon.com/images/I/61b5eq+S7+L._SL1500_.jpg",
-            "category":"men",
-            "price":2449
+            "id":3,
+            "name":"Red Chief Leather Shoe",
+            "description":" Red Chief Genuine Leather Derby Lace Up |Formal Shoes for Men for Office | TPR Sole|",
+            "image":"https://m.media-amazon.com/images/I/812NCj4i0UL._SY695_.jpg",
+            "category":"Shoes",
+            "price":2160
+        },
+        {
+            "id":3,
+            "name":"Bata Men Pull On Formal Shoes",
+            "description":" Look effortlessly stylish by wearing this pair of Shoes featuring an eye-catching design and a refined appeal. A perfect choice to flaunt a classy style wherever you go.",
+            "image":"https://m.media-amazon.com/images/I/813AAA-JKNL._SX695_.jpg",
+            "category":"Shoes",
+            "price":2160
         }
     ]
 }

@@ -1,37 +1,120 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.navlinks{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    align-content:center;
-    gap:100px;
+
+.navlinks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    gap: 100px;
 
 
 }
-#navbar{
-  
-    width:100%;
-    height:70px;
-    background-color:#3d251e;
-    font-size:25px;
-    font-weight:bold;
-        
-}
-.weblogo{
-    color:red;
-    font-size:50px;
+
+#navbar {
+
+    width: 100%;
+    height: 70px;
+    background-color: #3d251e;
+    font-size: 25px;
+    font-weight: bold;
+
 }
 
-.homeProduct
-{
+.weblogo {
+    color: red;
+    font-size: 50px;
+}
+
+.homeProduct {
     width: 90%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    justify-content: space-between;
+    justify-content: flex-start;
+}
+
+footer.footer {
+    background-color: #000;
+    color: #fff;
+    /* padding-top: 3rem; */
+    /* padding-bottom: 2rem; */
+    animation: fadeInUp 1s ease-out;
+}
+
+footer.footer h5,
+footer.footer h6 {
+    color: #ff8000;
+}
+
+footer.footer p,
+footer.footer a {
+    font-size: 0.9rem;
+    /* line-height: 1.6; */
+    color: #ccc;
+    text-decoration: none;
+}
+
+footer.footer a:hover {
+    color: #ff8000;
+    text-decoration: underline;
+}
+footer{
+    
+.input-group .form-control {
+    border-radius: 0.25rem 0 0 0.25rem;
+    border: none;
+}
+
+.input-group .btn {
+    border-radius: 0 0.25rem 0.25rem 0;
+}
+
+.list-inline-item a {
+    background-color: #ff8000;
+    padding: 0.5rem;
+    border-radius: 50%;
+    margin: 0 0.2rem;
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.list-inline-item a:hover {
+    transform: scale(1.1);
+    background-color: #e67300;
+}
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    footer.footer .row>div {
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+
+    .input-group {
+        flex-direction: column;
+    }
+
+    .input-group .form-control,
+    .input-group .btn {
+        width: 100%;
+        border-radius: 0.25rem;
+        margin-bottom: 0.5rem;
+    }
 }
