@@ -2,6 +2,9 @@ import Carousel from 'react-bootstrap/Carousel';
 import img1 from "../Image/slider1.png";
 import img2 from "../Image/slider2.png";
 import img3 from "../Image/slider3.png";
+import img4 from "../Image/slider4.png";
+import img5 from "../Image/slider5.gif";
+import img6 from "../Image/slider6.gif";
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import BackendUrl from '../BackendUrl';
@@ -48,33 +51,38 @@ const Home=()=>{
     return(
         <>
           <Carousel>
-      <Carousel.Item interval={700}>
+      <Carousel.Item interval={4000}>
         <img src={img1} width="100%" height="600px"/>
         <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h3></h3>
+          <p></p>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item interval={700}>
-       <img src={img2}  width="100%" height="600px"/>
+      <Carousel.Item interval={4000}>
+       <img src={img5}  width="100%" height="600px"/>
         <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h3></h3>
+          <p></p>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item interval={700}>
-
+      <Carousel.Item interval={4000}>
         <img src={img3}  width="100%" height="600px"/>
         <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
+          <h3></h3>
+          <p></p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item interval={4000}>
+        <img src={img6}  width="100%" height="600px"/>
+        <Carousel.Caption>
+          <h3></h3>
+          <p></p>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel> 
         <br/>
-             <div className='homeProduct'>
+            <h1>Our latest Product</h1>
+          <div className='homeProduct'>
           {ans}
           </div>
           
