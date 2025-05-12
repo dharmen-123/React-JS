@@ -54,7 +54,7 @@ const Home=()=>{
 
     return(
         <>
-          <Carousel style={{marginTop:"4%"}}>
+          <Carousel style={{marginTop:"5%"}}>
       <Carousel.Item interval={4000}>
         <img src={img1} width="100%" height="500px"/>
         <Carousel.Caption>

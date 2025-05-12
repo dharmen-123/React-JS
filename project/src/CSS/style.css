@@ -3,7 +3,20 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+#topbar{
+    margin: 0%;
+    padding: 0%;
+    position:fixed;
+    top:0%;
+    box-sizing: border-box;
+    width:100%;
+    height:70px;
+    background-color:#3d251e;
+    color:white; 
+    font-size:30px;
+    font-weight:bold;
+    z-index: 888;
+}
 .navlinks {
     display: flex;
     justify-content: space-between;
@@ -25,14 +38,29 @@
     font-size: 25px;
     font-weight: bold;
  
-    #lasticons{
+  
+}
+.me-auto{
+    /* gap:10rem; */
+    
+    span{
+    
+        display:flex;
+    justify-content: space-between;
+    }
+}
+  #lasticons{
         display:flex;
         justify-content:space-between;
         align-items:center;
         gap:50px;
-    }
-}
 
+        button{
+          color:white;
+          font-weight:bold;
+
+        }
+    }
 .weblogo {
     color: red;
     font-size: 50px;

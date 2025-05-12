@@ -4,8 +4,8 @@ import { FaPlusSquare } from "react-icons/fa";
 import { FaMinusSquare } from "react-icons/fa";
 import { qntyInc, qntyDec, proRemove } from "../cartSlice";
 import { FaRupeeSign } from "react-icons/fa";
-import { MdDeleteSweep } from "react-icons/md";
-
+import Button from 'react-bootstrap/Button';
+import Image from 'react-bootstrap/Image';
 const MyCart=()=>{
     const cartData= useSelector(state=>state.mycart.cart);
     const dispatch = useDispatch();
@@ -17,7 +17,8 @@ const MyCart=()=>{
         <>
           <tr>
             <td>
-                <img src={key.image} width="100" height="100" />
+                {/* <img src= {key.image} width="150" height="130" /> */}
+                <Image src= {key.image} roundedCircle width="150" height="130"/>
                 </td>
             <td>{key.name}</td>
             <td>{key.category}</td>
@@ -29,12 +30,11 @@ const MyCart=()=>{
              
              </td>
             <td>{key.price}</td>
-            <td>
-                {key.qnty * key.price}
+            <td >
+                <Button variant="success" style={{fontSize:"25px"}}>{key.qnty * key.price}</Button>
             </td>
             <td style={{fontSize:"30px"}}>
-                  <MdDeleteSweep style={{cursor:"pointer"}} onClick={()=>{dispatch(proRemove({id:key.id}))}} />
-
+                  <Button variant="danger" style={{cursor:"pointer"}} onClick={()=>{dispatch(proRemove({id:key.id}))}}>Remove</Button>
             </td>
           </tr>
         
@@ -43,26 +43,30 @@ const MyCart=()=>{
    })
     return(
         <>
-          <h1> My Cart Products</h1>
-          <h2 align="center"> <FaRupeeSign /> : {TotAmount}</h2>
-          <hr />
+        <br/><br/><br/>
+        
+          <h1 align="center">Cart Items</h1>
 
-          <Table striped bordered hover>
+          <Table   style={{textAlign:"center",backgroundColor:"white" , border:"0px solid white", width:"85%" , margin:"auto"}}>
       <thead>
         <tr>
-          <th>#</th>
+          <th>Product Image</th>
           <th>Priduct Name</th>
           <th>Category</th>
           <th> Quantity </th>
           <th> Price</th>
           <th> Total Price</th>
-          <th></th>
+          <th>Delete Item</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody style={{textAlign:"center",alignContent:"center" , fontSize:"25px"}}>
         {ans}
         </tbody>
        </Table>
+       <br/>
+          <hr />
+          <h2 align="center">Total: <FaRupeeSign style={{fontSize:"25px" ,alignContent:"center"}}/>{TotAmount}
+           <Button variant="primary" style={{textAlign:"center"}}>Pay Now</Button></h2>
         </>
     )
 }
