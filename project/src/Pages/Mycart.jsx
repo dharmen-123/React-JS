@@ -6,6 +6,7 @@ import { qntyInc, qntyDec, proRemove } from "../cartSlice";
 import { FaRupeeSign } from "react-icons/fa";
 import Button from 'react-bootstrap/Button';
 import Image from 'react-bootstrap/Image';
+
 const MyCart=()=>{
     const cartData= useSelector(state=>state.mycart.cart);
     const dispatch = useDispatch();

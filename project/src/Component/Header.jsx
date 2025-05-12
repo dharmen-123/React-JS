@@ -52,10 +52,11 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 import weblogo from "../Image/copy.png";
 import { FaCartArrowDown } from "react-icons/fa";
 import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
+// import Form from 'react-bootstrap/Form';
 import { Link} from "react-router-dom"
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
@@ -76,25 +77,31 @@ const Header=()=>{
         <Navbar.Toggle aria-controls="basic-navbar-nav" style={{color:"white" , backgroundColor:"white"}}/>
         <Navbar.Collapse id="basic-navbar-nav" >
           <Nav className="me-auto" style={{color:"white",zIndex:"999", position:"absolute"}}>
-            {/* <span> */}
             <Nav.Link style={{color:"white"}} as={Link} to="home">Home</Nav.Link>
             <Nav.Link style={{color:"white"}} as={Link} to="brands">Brands</Nav.Link>
             <Nav.Link style={{color:"white"}} as={Link} to="shoes">Shoes</Nav.Link>
-           {/* </span> */}
-          <span id="lasticons">
-         <Form.Control
+            <Nav.Link style={{color:"white"}} as={Link} to="shoes">Blazer</Nav.Link>
+            <div style={{color:"white"}}>
+           <NavDropdown title="Collection" id="basic-nav-dropdown">
+              <NavDropdown.Item as={Link} >Action</NavDropdown.Item>
+              <NavDropdown.Item as={Link} > Another action</NavDropdown.Item>
+              <NavDropdown.Item as={Link} >Something</NavDropdown.Item>
+            </NavDropdown>
+            </div>
+          </Nav>
+        </Navbar.Collapse>
+        <span id="lasticons">
+         {/* <Form.Control
               type="text"
               placeholder="Search"
               className=" mr-sm-2"
-            />
-        <Button variant="outline-warning">Login</Button>
+            /> */}
+        <Button variant="outline-warning" onClick={()=>{navigate("/login")}}>Login</Button>
          <div style={{display:"flex" , justifyContent:"center",margin:"-5px", color:"orange"}}>
          {cartLength }
         <FaCartArrowDown onClick={()=>{navigate("/mycart")}} style={{cursor:"pointer",alignItem:"center" , fontSize:"35px" , color:"white" , marginLeft:"-10px"}} />
         </div>
         </span>
-          </Nav>
-        </Navbar.Collapse>
       </Container>
     </Navbar>
     </div>
