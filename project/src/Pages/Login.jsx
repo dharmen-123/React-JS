@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import { Form, Button, Alert } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 
 const Login=()=>{
       const [email, setEmail] = useState('');
       const [password, setPassword] = useState('');
       const [errors, setErrors] = useState({});
 
+      const navigate = useNavigate();
   const validateForm = () => {
     const newErrors = {};
     if (!email) newErrors.email = 'Email is required';
@@ -65,6 +67,7 @@ const Login=()=>{
             Login
           </Button>
         </Form>
+        <p>Dont hve an account ?<a href="" onClick={()=>{navigate("/signup")}} style={{cursor:"pointer"}}>Sign in</a></p>
       </div>
     </div>
         </>
