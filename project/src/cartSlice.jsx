@@ -52,11 +52,10 @@ const cartSlice = createSlice({
       },
 
       proRemove:(state, actions)=>{
-        toast.error("Item removed",{
-                position:"top-center"
-              })
+        
            state.cart= state.cart.filter(item=>item.id!=actions.payload.id);
-            
+         toast.error("Item removed",{
+              })    
       }
       
     }
