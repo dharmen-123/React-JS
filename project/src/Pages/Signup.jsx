@@ -41,7 +41,10 @@ const Signup = () => {
   };
 
   return (
-    <Container>
+     <>
+    <br/><br/><br/><br/>
+    <div >
+    <Container className="Signupfrom">
       <Row className="justify-content-md-center">
         <Col md={6}>
           <h2>Sign Up</h2>
@@ -114,6 +117,10 @@ const Signup = () => {
         </Col>
       </Row>
     </Container>
+    </div>
+
+    <br/>
+    </>
   );
 };
 

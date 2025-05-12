@@ -10,6 +10,7 @@ import { useDispatch } from 'react-redux';
 import { FaCartArrowDown } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa";
 import { FaCircleInfo } from "react-icons/fa6";
+import { ToastContainer, toast } from 'react-toastify';
 
 import img1 from "../Image/slider1.png";
 import img3 from "../Image/slider3.png";
@@ -19,8 +20,7 @@ import img6 from "../Image/slider6.gif";
 const Home=()=>{
  const [mydata, setMydata] = useState([]);
     const dispatch= useDispatch();
-    
-   
+    const notify = () => toast('Wow so easy !');
     const loadData=async()=>{
       const response = await axios.get(BackendUrl);
       console.log(response.data);
@@ -46,7 +46,7 @@ const Home=()=>{
           {/* {key.description} */}
         </Card.Text>
         <h5> Price : {key.price}</h5>
-        <Button variant="primary" style={{marginLeft:"10px"}}
+        <Button variant="primary" style={{marginLeft:"10px"}} 
         onClick={()=>{dispatch(addToCart({id:key.id, name:key.name, description:key.description,category:key.category, image:key.image, qnty:1, price:key.price }))}}
         >Add To Cart</Button>
       </Card.Body>
@@ -97,7 +97,7 @@ const Home=()=>{
           </div>
         <br/>
            
-     
+     <ToastContainer />
         </>
     )
 }

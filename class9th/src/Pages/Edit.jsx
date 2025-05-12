@@ -32,7 +32,7 @@ const Edit=()=>{
          console.log(response.data);
        
          toast.warning("Record Update Successfully👍",{
-          position:"top-center"
+          
          })
      }
     return(

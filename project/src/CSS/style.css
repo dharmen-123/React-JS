@@ -81,6 +81,13 @@
   
 }
 
+.Signupfrom{
+    margin:auto;
+    padding:10px;
+    width:700px;
+   /* border:2px solid black; */
+}
+
 footer.footer {
     background-color: #251001ef;
     color: #fff;
