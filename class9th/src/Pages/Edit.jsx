@@ -31,8 +31,7 @@ const Edit=()=>{
         const response =await axios.put(api ,editdata);
          console.log(response.data);
        
-         toast.warning("Record Update Successfully👍",{
-          
+         toast.warning("Record Update Successfully👍",{    
          })
      }
     return(

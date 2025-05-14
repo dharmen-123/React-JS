@@ -69,8 +69,9 @@ const Login=()=>{
         </Form>
         <p>Dont hve an account ?<a href="" onClick={()=>{navigate("/signup")}} style={{cursor:"pointer"}}>Sign in</a></p>
       </div>
-    </div>
-        </>
+      </div>
+      
+      </> 
     )
 }
 
