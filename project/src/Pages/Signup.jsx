@@ -113,7 +113,7 @@ const Signup = () => {
               Sign Up
             </Button>
           </Form>
-          <p>Already registered? <a href="" onClick={()=>{navigate("/login")}} style={{cursor:"pointer"}}>Sign in</a></p>
+          <p>Already registered? <a href="" onClick={()=>{navigate("/login")}} style={{cursor:"pointer"}}>Login</a></p>
         </Col>
       </Row>
     </Container>
