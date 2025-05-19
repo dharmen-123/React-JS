@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useSelector , useDispatch } from "react-redux";
 import { addTask  , removeTask,uncompleteTask, completeTask } from "./todoSlice";
+
 const App=()=>{
   const [val, setval]=useState("");
   const data = useSelector(state=>state.todo.task);
@@ -10,7 +11,6 @@ const App=()=>{
   let sno=0;
   const ans=data.map((key ,  index)=>{
     sno++;
-
     return(
       <>
        <tr>
@@ -29,6 +29,7 @@ const App=()=>{
       </>
     )
   })
+
 
   return(
     <>
