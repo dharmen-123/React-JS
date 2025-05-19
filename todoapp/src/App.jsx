@@ -7,7 +7,6 @@ const App=()=>{
   const dispatch = useDispatch();
 
   console.log(data);
-  
   let sno=0;
   const ans=data.map((key ,  index)=>{
     sno++;

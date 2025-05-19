@@ -1,5 +1,4 @@
 import { createSlice } from "@reduxjs/toolkit";
-
 const todoSlice= createSlice({
     name:"mytodo",
     initialState:{
@@ -11,7 +10,7 @@ const todoSlice= createSlice({
         },
         removeTask:(state , actions)=>{
             state.task = state.task.filter(key=>key.id!=actions.payload.id);
-            // console.log(actions.payload.id);           
+            console.log(actions.payload.id);           
         },
         completeTask:(state , actions)=>{
             for (var i=0 ; i<state.task.length;i++){
