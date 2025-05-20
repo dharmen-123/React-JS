@@ -35,9 +35,10 @@ const Signup = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (validateForm()) {
+    if (validateForm()){
       console.log('Form submitted:', formData);
     }
+    navigate("/login")
   };
 
   return (
@@ -78,7 +79,6 @@ const Signup = () => {
                 {errors.lastName}
               </Form.Control.Feedback>
             </Form.Group>
-
             <Form.Group controlId="formEmail">
               <Form.Label>Email address</Form.Label>
               <Form.Control
@@ -118,7 +118,6 @@ const Signup = () => {
       </Row>
     </Container>
     </div>
-
     <br/>
     </>
   );
