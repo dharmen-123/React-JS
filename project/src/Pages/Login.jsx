@@ -28,6 +28,7 @@ const Login=()=>{
       console.log('Login attempted with:', { email, password });
       // Here you would typically send a request to your server
     }
+    
   };
 
     return(
