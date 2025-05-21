@@ -1,35 +1,82 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState, useEffect } from "react";
+import axios from "axios";
 
-function App() {
-  const [count, setCount] = useState(0)
+const App=()=>{
+     const [Mydata , setdata]=useState([]);
+     const [input , setinp]=useState({});
+     const handleSubmit=async()=>{
+        const api="http://localhost:3000/Todolist";
+        const response=await axios.post(api,input);
+        console.log(response.data);
+        // setdata(response.data);
+     };
+     const handleinput=(e)=>{
+        let name=e.target.name;
+        let value=e.target.value;
+        setinp(values=>({...values,[name]:value}));
+        console.log(input);
+     }
+     const Del=async(id)=>{
+          const api=`http://localhost:3000/Todolist/{id}`;
+         const response = await axios.delete(api);
+         alert("delete Successful")
+     }
+     const  Onload=async()=>{
+      const api="http://localhost:3000/Todolist";
+      const  response= await axios.get(api);
+        console.log(response.data);
+        setdata(response.data);
+     }  
+     useEffect(()=>{
+        Onload()
+     },[])
+    const Change=()=>{
+      
 
-  return (
+    }
+  const ans=Mydata.map((key)=>{
+    return(
+      <>
+         <tr>
+          <td><input type="checkbox" name="" id="" onClick={Change()} /></td>
+          <td id="taskline">{key.task}</td>
+          <td>{key.category}</td>
+          <td><button onClick={Del}>Delete</button></td>
+          </tr>
+
+      </>
+    )
+  })
+  return(
     <>
       <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        <h1>TO-DO List</h1>
+        <input type="text" placeholder="Enter your task" name="task" onChange={handleinput} />
+        <select name="category" id="" onChange={handleinput}>
+          <option value="">Category</option>
+          <option value="">Office</option>
+          <option value="">Study</option>
+          <option value="">Home</option>
+        </select>
+        <button onClick={handleSubmit}> Add </button>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+      <div>
+          <table border={1}>
+            <thead>
+              <tr>
+                <th></th>
+                <th>Task</th>
+                <th>Category</th>
+                <th>delete</th>
+              </tr>
+            </thead>
+            <tbody>
+              {ans}
+            </tbody>
+          </table>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }
 
-export default App
+export default App;

@@ -1,0 +1,27 @@
+{
+  "Todolist": [
+    {
+      "id": 1,
+      "task": "Complete the files",
+      "category": "office"
+    },
+    {
+      "id": 2,
+      "task": "Notes assignment pending",
+      "category": "Study"
+    },
+    {
+      "id": 3,
+      "task": "some work",
+      "category": "Home"
+    },
+    {
+      "id": "da16"
+    },
+    {
+      "id": "bb5c",
+      "task": "hello",
+      "category": ""
+    }
+  ]
+}
