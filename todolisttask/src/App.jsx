@@ -53,10 +53,10 @@ const App=()=>{
         <h1>TO-DO List</h1>
         <input type="text" placeholder="Enter your task" name="task" onChange={handleinput} />
         <select name="category" id="" onChange={handleinput}>
-          <option value="">Category</option>
-          <option value="">Office</option>
-          <option value="">Study</option>
-          <option value="">Home</option>
+          <option value="category">Category</option>
+          <option value="office">Office</option>
+          <option value="study">Study</option>
+          <option value="home">Home</option>
         </select>
         <button onClick={handleSubmit}> Add </button>
       </div>
