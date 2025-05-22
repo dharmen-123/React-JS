@@ -8,7 +8,6 @@ import { useNavigate } from "react-router-dom";
 
 const Update=()=>{
     const [mydata , setdata]=useState([]);
-
     const navigate = useNavigate();
 
     const Loaddata=async()=>{
