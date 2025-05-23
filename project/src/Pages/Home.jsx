@@ -11,7 +11,6 @@ import { FaCartArrowDown } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa";
 import { FaCircleInfo } from "react-icons/fa6";
 import { ToastContainer, toast } from 'react-toastify';
-
 import img1 from "../Image/slider1.png";
 import img3 from "../Image/slider3.png";
 import img5 from "../Image/slider5.gif";

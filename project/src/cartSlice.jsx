@@ -20,6 +20,9 @@ const cartSlice = createSlice({
             else 
             {
                 state.cart.push(actions.payload);
+                toast.success("Product  add in your Cart",{
+                position:"top-center"
+              })
             }
             
         },

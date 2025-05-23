@@ -123,6 +123,17 @@
             "category":"Blazer",
             "price":5780
         }
+    ],
+    
+    "Blazer":[
+        {
+          "id":1,
+          "name":"Blazer",
+          "description":"dtthdthxfbcfncg",
+          "price":3500,
+          "brands":"Puma"
+        }
     ]
+    
 }
 
