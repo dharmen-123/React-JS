@@ -4,6 +4,7 @@ import Home from "./Pages/Home";
 import MyCart from "./Pages/Mycart";
 import Login from "./Pages/Login";
 import Signup from "./Pages/Signup";
+import Blazer from "./Pages/Blazer";
 
 const App=()=>{
   return(
@@ -17,7 +18,7 @@ const App=()=>{
             <Route path="mycart" element={<MyCart/>}/>
             <Route path="login" element={<Login/>}/>
             <Route path="signup" element={<Signup/>}/>
-           {/* <Route path="brands" element={} /> */}
+           <Route path="blazer" element={<Blazer/>} />
            </Route>
          </Routes>
        </BrowserRouter>

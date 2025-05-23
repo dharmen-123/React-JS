@@ -124,7 +124,6 @@
             "price":5780
         }
     ],
-    
     "Blazer":[
         {
           "id":1,
@@ -132,8 +131,36 @@
           "description":"dtthdthxfbcfncg",
           "price":3500,
           "brands":"Puma"
+        },
+        {
+          "id":2,
+          "name":"Blazer",
+          "description":"dtthdthxfbcfncg",
+          "price":3500,
+          "brands":"Puma"
+        },
+        {
+          "id":3,
+          "name":"Blazer",
+          "description":"dtthdthxfbcfncg",
+          "price":3500,
+          "brands":"Puma"
+        },
+        {
+          "id":4,
+          "name":"Blazer",
+          "description":"dtthdthxfbcfncg",
+          "price":3500,
+          "brands":"Puma"
+        },
+        {
+          "id":5,
+          "name":"Blazer",
+          "description":"gbgbsgfdbsgb",
+          "price":4500,
+          "brands":"Puma"
         }
     ]
-    
+
 }
 
