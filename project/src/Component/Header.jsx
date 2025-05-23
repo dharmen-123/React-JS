@@ -33,7 +33,7 @@ const Header=()=>{
            <NavDropdown bg="light"  title="Collection" style={{color:"white"}} id="basic-nav-dropdown">
               <NavDropdown.Item as={Link} to="blazer" >Blazer</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="shoes">Shoes</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="watch">Watches</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="watches">Watches</NavDropdown.Item>
             </NavDropdown>
             {/* </div> */}
           </Nav>
