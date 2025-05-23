@@ -30,7 +30,7 @@ const Header=()=>{
             <Nav.Link style={{color:"white"}} as={Link} to="home">Home</Nav.Link>
             <Nav.Link style={{color:"white"}} as={Link} to="brands">Brands</Nav.Link>
 
-           <NavDropdown bg="light"  title="Collection" style={{color:"white"}} id="basic-nav-dropdown">
+           <NavDropdown bg="dark"   title=" Collection"  id="basic-nav-dropdown">
               <NavDropdown.Item as={Link} to="blazer" >Blazer</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="shoes">Shoes</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="watches">Watches</NavDropdown.Item>

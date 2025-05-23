@@ -12,7 +12,7 @@ const Render=()=>{
         <>
         Enter Your name: <input type="text"  value={name}  
         onChange={(e)=>{setName(e.target.value)}}/>
-         <h1>My Render count : {cntRef}</h1>
+         <h1>My Render count : {cntRef} </h1>
 
         </>
     )
