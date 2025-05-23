@@ -35,7 +35,6 @@ const Header=()=>{
               <NavDropdown.Item as={Link} to="shoes">Shoes</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="watches">Watches</NavDropdown.Item>
             </NavDropdown>
-            {/* </div> */}
           </Nav>
         </Navbar.Collapse>
         <span id="lasticons">
