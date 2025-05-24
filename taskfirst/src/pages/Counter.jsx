@@ -18,11 +18,12 @@ const Counter=()=>{
     return(
         <>
         <h1>Welcome to My Counter App</h1>
-        <div>
-             <h1>{count} </h1>
+        <div style={{width:"400px", padding:"auto", textAlign:"center"}}>
+             <h1 >{count} </h1>
+             <span style={{ display:"flex",gap:"30px",justifyContent:"center"}}>
             <Button variant="primary" onClick={()=>{disp("Increment")}}>Increment</Button>
             <Button variant="primary" onClick={()=>{disp("Decrement")}}>Decrement</Button>
-             
+             </span>
         </div>
         </>
     )
