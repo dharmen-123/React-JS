@@ -1,36 +1,36 @@
 import { useSelector , useDispatch } from "react-redux";
 import { changecolor } from "./colorslice";
-import { useState } from "react";
+// import { useState } from "react";
 const App=()=>{
-  // const Clr = useSelector(state=>state.mycolor.color);
-  const data= useSelector(state=>state.mydark.work);
+  const Clr = useSelector(state=>state.mycolor.color);
+  // const data= useSelector(state=>state.mydark.work);
   const dispatch = useDispatch();
-  const [text , settext]=useState("");
-let sno=0;
-const ans=data.map((key)=>{
-    sno++;
+  // const [text , settext]=useState("");
+// let sno=0;
+// const ans=data.map((key)=>{
+//     sno++;
 
-    return(
-      <>
-      <tr>
-        <td>{sno}</td>
-        <td>{key.task}</td>
-      </tr>
-      </>
-    )
-})
+//     return(
+//       <>
+//       <tr>
+//         <td>{sno}</td>
+//         <td>{key.task}</td>
+//       </tr>
+//       </>
+//     )
+// })
   return(
     <>
      <h1>Welcome</h1>
       Enter color: <input type="text" value={text} 
-       onChange={(e)=>{settext(e.target.value)}}
+      //  onChange={(e)=>{settext(e.target.value)}}
       />
       <button onClick={()=>{dispatch(changecolor({task:text}))}}>Click</button>
       <br /><br />
-      {/* <div style={{width:"200px",height:"200px" , backgroundColor:Clr}}>
+      <div style={{width:"200px",height:"200px" , backgroundColor:Clr}}>
       
-      </div> */}
-      <table>
+      </div>
+      {/* <table>
         <thead>
          <tr>
           <td>#</td>
@@ -40,7 +40,7 @@ const ans=data.map((key)=>{
         <tbody>
         {ans}
         </tbody>
-      </table>
+      </table> */}
     </>
   )
 }

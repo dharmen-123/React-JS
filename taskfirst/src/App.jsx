@@ -2,6 +2,9 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Layout from "./Layout";
 import Home from "./pages/Home";
 import Counter from "./pages/Counter";
+import Countertool from "./pages/Countertool";
+import Theme from "./pages/Theme";
+import Contact from "./pages/Contact";
 
 
 const App=()=>{
@@ -13,8 +16,9 @@ const App=()=>{
         <Route index element={<Home/>}/>
         <Route path="home" element={<Home/>}/>
         <Route path="counter" element={<Counter/>}/>
-        <Route path="toolcounter" element={<Counter/>}/>
-
+        <Route path="toolcounter" element={<Countertool/>}/>
+        <Route path="theme" element={<Theme/>}/>
+        <Route path="contact" element={<Contact/>}/>
        </Route>
      </Routes>
     </BrowserRouter>
