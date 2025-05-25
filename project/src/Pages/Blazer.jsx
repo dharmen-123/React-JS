@@ -6,7 +6,8 @@ import axios from 'axios';
 import { useDispatch } from 'react-redux';
 import { FaCartArrowDown } from "react-icons/fa";
 import { addToCart } from '../cartSlice';
-
+import { ToastContainer, toast } from 'react-toastify';
+ 
 import s1 from "../Image/blazers1.png";
 import s2 from "../Image/blazers2.png";
 import s3 from "../Image/blazers3.png";
@@ -30,7 +31,7 @@ const Blazer=()=>{
         return(
             <>
            <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={key.image} />
+      <Card.Img variant="top" src={key.image} style={{height:"400px"}} />
       <Card.Body>
         <Card.Title>{key.name}</Card.Title>
         <Card.Text>
@@ -92,7 +93,7 @@ const Blazer=()=>{
          <div id="blazerdiv">
           {ans}
          </div>
-       
+            <ToastContainer />
         </>
     )
 }

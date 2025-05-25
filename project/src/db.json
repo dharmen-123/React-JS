@@ -129,7 +129,7 @@
           "id":1,
           "name":"Blazer",
           "description":"dtthdthxfbcfncg",
-          "price":3500,
+          "price":4500,
           "category":"Blazer",
           "image":"https://i.pinimg.com/736x/a5/a4/42/a5a442e8fa323cae6e589de64df486fe.jpg"
         },
@@ -137,7 +137,7 @@
           "id":2,
           "name":"Blazer",
           "description":"gbgbsgfdbsgb",
-          "price":4500,
+          "price":3899,
           "category":"Blazer",
           "image":"https://i.pinimg.com/736x/bf/84/07/bf8407bec5948d797d805c1b179d07b4.jpg"
         },
@@ -145,7 +145,7 @@
           "id":3,
           "name":"Blazer",
           "description":"gbgbsgfdbsgb",
-          "price":4500,
+          "price":5650,
           "category":"Blazer",
           "image":"https://i.pinimg.com/736x/62/58/c2/6258c229725c2f33869b2f44352be117.jpg"
         },
@@ -153,7 +153,7 @@
           "id":4,
           "name":"Blazer",
           "description":"gbgbsgfdbsgb",
-          "price":4500,
+          "price":7380,
           "category":"Blazer",
           "image":"https://i.pinimg.com/736x/77/ea/c7/77eac7433850f3302559a482b71ad2ce.jpg"
         },
@@ -161,15 +161,15 @@
           "id":5,
           "name":"Blazer",
           "description":"gbgbsgfdbsgb",
-          "price":4500,
+          "price":6890,
           "category":"Blazer",
           "image":"https://i.pinimg.com/736x/cc/fd/7f/ccfd7fded78b670df0ce617eb45d4e0d.jpg"
         },
          {
           "id":6,
-          "name":"Blazer",
+          "name":"Peak Lapel Suit",
           "description":"dtthdthxfbcfncg",
-          "price":3500,
+          "price":4700,
           "category":"Blazer",
           "image":"https://i.pinimg.com/736x/00/c9/0b/00c90ba57ea0481ab08fa3b6c2fbe1f1.jpg"
         },
@@ -177,7 +177,7 @@
           "id":7,
           "name":"Styles formal",
           "description":"gbgbsgfdbsgb",
-          "price":4500,
+          "price":3500,
           "category":"Blazer",
           "image":"https://i.pinimg.com/736x/01/8a/4c/018a4c24c88d277b94a015d753792c43.jpg"
         },
@@ -185,31 +185,31 @@
           "id":8,
           "name":"Eddie's Suit",
           "description":"gbgbsgfdbsgb",
-          "price":4500,
+          "price":7000,
           "category":"Blazer",
           "image":"https://i.pinimg.com/736x/91/c1/4d/91c14d36151e0f10119c06c234bae310.jpg"
         },
         {
           "id":9,
-          "name":"Blazer",
+          "name":"Double Breasted  Velvet",
           "description":"gbgbsgfdbsgb",
-          "price":4500,
+          "price":5400,
           "category":"Blazer",
           "image":"https://i.pinimg.com/736x/34/d3/20/34d3202f70c01b2d0efc16c6bdd15a14.jpg"
         },
         {
           "id":10,
-          "name":"Art Silk Party Wear IndoWestern Dress",
+          "name":"Art Silk IndoWestern Dress",
           "description":"gbgbsgfdbsgb",
-          "price":4500,
+          "price":7480,
           "category":"Blazer",
           "image":"https://i.pinimg.com/736x/0a/f3/65/0af3654f0bb137af3622b994945d2148.jpg"
         },
         {
           "id":11,
-          "name":"White Slim-Fit 3-Piece Suit - VIOSSI",
+          "name":"White Slim-Fit  VIOSSI",
           "description":"gbgbsgfdbsgb",
-          "price":4500,
+          "price":6999,
           "category":"Blazer",
           "image":"https://i.pinimg.com/736x/59/63/c7/5963c70373b165f2829044505915c24d.jpg"
         },
@@ -217,9 +217,107 @@
           "id":12,
           "name":"black gent's prince coat",
           "description":"gbgbsgfdbsgb",
-          "price":4500,
+          "price":4299,
           "category":"Blazer",
           "image":"https://i.pinimg.com/736x/f0/cd/93/f0cd93921aed27ea981a1b65997025dd.jpg"
+        }
+    ],
+    "Watches":[
+        {
+          "id":1,
+          "name":"New stylish watches",
+          "description":"dtthdthxfbcfncg",
+          "price":4500,
+          "category":"Watches",
+          "image":"https://i.pinimg.com/736x/9a/79/a1/9a79a120b7c087d5d42848850c18a99e.jpg"
+        },
+        {
+          "id":2,
+          "name":"Rolex NEW 2025 diamond",
+          "description":"gbgbsgfdbsgb",
+          "price":3899,
+          "category":"Watches",
+          "image":"https://i.pinimg.com/736x/ba/0b/14/ba0b1456ac8fa197ba069335f8d8b347.jpg"
+        },
+        {
+          "id":3,
+          "name":"SEIKO ASTRON GPS SOLAR",
+          "description":"gbgbsgfdbsgb",
+          "price":5650,
+          "category":"Watches",
+          "image":"https://i.pinimg.com/736x/06/08/6d/06086d530cf9bbff3bef78195ec97fbb.jpg"
+        },
+        {
+          "id":4,
+          "name":"New stylish watches",
+          "description":"gbgbsgfdbsgb",
+          "price":7380,
+          "category":"Watches",
+          "image":"https://i.pinimg.com/736x/77/ea/c7/77eac7433850f3302559a482b71ad2ce.jpg"
+        },
+        {
+          "id":5,
+          "name":"Ethos Luxury watches",
+          "description":"gbgbsgfdbsgb",
+          "price":6890,
+          "category":"Watches",
+          "image":"https://i.pinimg.com/736x/5d/bf/8f/5dbf8f6f5b229c461e38f1eab8ed30f9.jpg"
+        },
+         {
+          "id":6,
+          "name":"New stylish watches",
+          "description":"dtthdthxfbcfncg",
+          "price":4700,
+          "category":"Watches",
+          "image":"https://i.pinimg.com/736x/00/c9/0b/00c90ba57ea0481ab08fa3b6c2fbe1f1.jpg"
+        },
+        {
+          "id":7,
+          "name":"New stylish watches",
+          "description":"gbgbsgfdbsgb",
+          "price":3500,
+          "category":"Watches",
+          "image":"https://i.pinimg.com/736x/01/8a/4c/018a4c24c88d277b94a015d753792c43.jpg"
+        },
+        {
+          "id":8,
+          "name":"New stylish watches",
+          "description":"gbgbsgfdbsgb",
+          "price":7000,
+          "category":"Watches",
+          "image":"https://i.pinimg.com/736x/91/c1/4d/91c14d36151e0f10119c06c234bae310.jpg"
+        },
+        {
+          "id":9,
+          "name":"New stylish watches",
+          "description":"gbgbsgfdbsgb",
+          "price":5400,
+          "category":"Watches",
+          "image":"https://i.pinimg.com/736x/34/d3/20/34d3202f70c01b2d0efc16c6bdd15a14.jpg"
+        },
+        {
+          "id":10,
+          "name":"New stylish watches",
+          "description":"gbgbsgfdbsgb",
+          "price":7480,
+          "category":"Watches",
+          "image":"https://i.pinimg.com/736x/0a/f3/65/0af3654f0bb137af3622b994945d2148.jpg"
+        },
+        {
+          "id":11,
+          "name":"New stylish watches",
+          "description":"gbgbsgfdbsgb",
+          "price":6999,
+          "category":"Watches",
+          "image":"https://i.pinimg.com/736x/65/39/52/653952432ca2ec0f04f7df75cdfc14f3.jpg"
+        },
+        {
+          "id":12,
+          "name":"New stylish watches",
+          "description":"gbgbsgfdbsgb",
+          "price":4299,
+          "category":"Watches",
+          "image":"https://i.pinimg.com/736x/f8/0b/88/f80b88f9f381b420abf285c9731db135.jpg"
         }
     ]
 
