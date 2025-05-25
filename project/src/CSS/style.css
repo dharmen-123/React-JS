@@ -31,8 +31,6 @@
 
 }
 
-
-
 #navbar {
 
     width: 100%;
@@ -55,7 +53,7 @@
     justify-content: space-between;
     }
 }
-  #lasticons{
+ #lasticons{
         display:flex;
         justify-content:space-between;
         align-items:center;
@@ -199,4 +197,20 @@ footer{
 
 .login-button {
   width: 100%;
+}
+
+/*###############  Blazer setions ############  */
+#basic-nav-dropdown{
+     color:white;
+}
+#basic-navbar-nav{
+    background:black;
+}
+#blazerdiv{
+    width:90%;
+    margin:auto;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:40px;
 }

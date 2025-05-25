@@ -27,23 +27,20 @@ const Header=()=>{
         <Navbar.Toggle aria-controls="basic-navbar-nav" style={{color:"white" , backgroundColor:"white"}}/>
         <Navbar.Collapse id="basic-navbar-nav" >
           <Nav className="me-auto" style={{color:"white",zIndex:"999", position:"absolute"}}>
-            <Nav.Link style={{color:"white"}} as={Link} to="home">Home</Nav.Link>
-            <Nav.Link style={{color:"white"}} as={Link} to="brands">Brands</Nav.Link>
+            <Nav.Link style={{color:"Orange"}} as={Link} to="home">Home</Nav.Link>
+            <Nav.Link style={{color:"Orange"}} as={Link} to="blazer">Blazer</Nav.Link>
+            <Nav.Link style={{color:"Orange"}} as={Link} to="shoes">Shoes</Nav.Link>
+            <Nav.Link style={{color:"Orange"}} as={Link} to="watches">Watch</Nav.Link>
 
-           <NavDropdown bg="dark"   title=" Collection"  id="basic-nav-dropdown">
+           {/* <NavDropdown bg="dark"   title=" Collection"  id="basic-nav-dropdown">
               <NavDropdown.Item as={Link} to="blazer" >Blazer</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="shoes">Shoes</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="watches">Watches</NavDropdown.Item>
-            </NavDropdown>
+            </NavDropdown> */}
           </Nav>
+          
         </Navbar.Collapse>
         <span id="lasticons">
-         {/* <Form.Control
-              type="text"
-              placeholder="Search"
-              className=" mr-sm-2"
-            /> */}
-            
         <Button variant="outline-warning" onClick={()=>{navigate("/login")}}>Login</Button>
          <div style={{display:"flex" , justifyContent:"center",margin:"-5px", color:"orange"}}>
          {cartLength }

@@ -4,6 +4,8 @@ import Card from 'react-bootstrap/Card';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useDispatch } from 'react-redux';
+import { FaCartArrowDown } from "react-icons/fa";
+import { addToCart } from '../cartSlice';
 
 import s1 from "../Image/blazers1.png";
 import s2 from "../Image/blazers2.png";
@@ -33,7 +35,12 @@ const Blazer=()=>{
         <Card.Title>{key.name}</Card.Title>
         <Card.Text>
         </Card.Text>
+        <div style={{display:"flex", justifyContent:"space-between"}}>
         <Button variant="primary">Price :{key.price}</Button>
+        <Button variant="outline-warning" 
+         onClick={()=>{dispatch(addToCart({id:key.id, name:key.name, description:key.description,category:key.category, image:key.image, qnty:1, price:key.price }))}}
+         style={{color:"brown",fontSize:"30px", padding:"0px 8px 0px 6px"}}><FaCartArrowDown /></Button>
+        </div>
       </Card.Body>
     </Card>  
             </>

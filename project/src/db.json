@@ -130,6 +130,7 @@
           "name":"Blazer",
           "description":"dtthdthxfbcfncg",
           "price":3500,
+          "category":"Blazer",
           "image":"https://i.pinimg.com/736x/a5/a4/42/a5a442e8fa323cae6e589de64df486fe.jpg"
         },
         {
@@ -137,28 +138,88 @@
           "name":"Blazer",
           "description":"gbgbsgfdbsgb",
           "price":4500,
-          "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGhN7g0vyOhKHEBw3fuDSyvNGLyPAIZrlcZQ&s"
+          "category":"Blazer",
+          "image":"https://i.pinimg.com/736x/bf/84/07/bf8407bec5948d797d805c1b179d07b4.jpg"
         },
         {
           "id":3,
           "name":"Blazer",
           "description":"gbgbsgfdbsgb",
           "price":4500,
-          "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGhN7g0vyOhKHEBw3fuDSyvNGLyPAIZrlcZQ&s"
+          "category":"Blazer",
+          "image":"https://i.pinimg.com/736x/62/58/c2/6258c229725c2f33869b2f44352be117.jpg"
         },
         {
           "id":4,
           "name":"Blazer",
           "description":"gbgbsgfdbsgb",
           "price":4500,
-          "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGhN7g0vyOhKHEBw3fuDSyvNGLyPAIZrlcZQ&s"
+          "category":"Blazer",
+          "image":"https://i.pinimg.com/736x/77/ea/c7/77eac7433850f3302559a482b71ad2ce.jpg"
         },
         {
           "id":5,
           "name":"Blazer",
           "description":"gbgbsgfdbsgb",
           "price":4500,
-          "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGhN7g0vyOhKHEBw3fuDSyvNGLyPAIZrlcZQ&s"
+          "category":"Blazer",
+          "image":"https://i.pinimg.com/736x/cc/fd/7f/ccfd7fded78b670df0ce617eb45d4e0d.jpg"
+        },
+         {
+          "id":6,
+          "name":"Blazer",
+          "description":"dtthdthxfbcfncg",
+          "price":3500,
+          "category":"Blazer",
+          "image":"https://i.pinimg.com/736x/00/c9/0b/00c90ba57ea0481ab08fa3b6c2fbe1f1.jpg"
+        },
+        {
+          "id":7,
+          "name":"Styles formal",
+          "description":"gbgbsgfdbsgb",
+          "price":4500,
+          "category":"Blazer",
+          "image":"https://i.pinimg.com/736x/01/8a/4c/018a4c24c88d277b94a015d753792c43.jpg"
+        },
+        {
+          "id":8,
+          "name":"Eddie's Suit",
+          "description":"gbgbsgfdbsgb",
+          "price":4500,
+          "category":"Blazer",
+          "image":"https://i.pinimg.com/736x/91/c1/4d/91c14d36151e0f10119c06c234bae310.jpg"
+        },
+        {
+          "id":9,
+          "name":"Blazer",
+          "description":"gbgbsgfdbsgb",
+          "price":4500,
+          "category":"Blazer",
+          "image":"https://i.pinimg.com/736x/34/d3/20/34d3202f70c01b2d0efc16c6bdd15a14.jpg"
+        },
+        {
+          "id":10,
+          "name":"Art Silk Party Wear IndoWestern Dress",
+          "description":"gbgbsgfdbsgb",
+          "price":4500,
+          "category":"Blazer",
+          "image":"https://i.pinimg.com/736x/0a/f3/65/0af3654f0bb137af3622b994945d2148.jpg"
+        },
+        {
+          "id":11,
+          "name":"White Slim-Fit 3-Piece Suit - VIOSSI",
+          "description":"gbgbsgfdbsgb",
+          "price":4500,
+          "category":"Blazer",
+          "image":"https://i.pinimg.com/736x/59/63/c7/5963c70373b165f2829044505915c24d.jpg"
+        },
+        {
+          "id":12,
+          "name":"black gent's prince coat",
+          "description":"gbgbsgfdbsgb",
+          "price":4500,
+          "category":"Blazer",
+          "image":"https://i.pinimg.com/736x/f0/cd/93/f0cd93921aed27ea981a1b65997025dd.jpg"
         }
     ]
 
