@@ -130,35 +130,35 @@
           "name":"Blazer",
           "description":"dtthdthxfbcfncg",
           "price":3500,
-          "brands":"Puma"
+          "image":"https://i.pinimg.com/736x/a5/a4/42/a5a442e8fa323cae6e589de64df486fe.jpg"
         },
         {
           "id":2,
           "name":"Blazer",
-          "description":"dtthdthxfbcfncg",
-          "price":3500,
-          "brands":"Puma"
+          "description":"gbgbsgfdbsgb",
+          "price":4500,
+          "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGhN7g0vyOhKHEBw3fuDSyvNGLyPAIZrlcZQ&s"
         },
         {
           "id":3,
           "name":"Blazer",
-          "description":"dtthdthxfbcfncg",
-          "price":3500,
-          "brands":"Puma"
+          "description":"gbgbsgfdbsgb",
+          "price":4500,
+          "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGhN7g0vyOhKHEBw3fuDSyvNGLyPAIZrlcZQ&s"
         },
         {
           "id":4,
           "name":"Blazer",
-          "description":"dtthdthxfbcfncg",
-          "price":3500,
-          "brands":"Puma"
+          "description":"gbgbsgfdbsgb",
+          "price":4500,
+          "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGhN7g0vyOhKHEBw3fuDSyvNGLyPAIZrlcZQ&s"
         },
         {
           "id":5,
           "name":"Blazer",
           "description":"gbgbsgfdbsgb",
           "price":4500,
-          "brands":"Puma"
+          "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGhN7g0vyOhKHEBw3fuDSyvNGLyPAIZrlcZQ&s"
         }
     ]
 

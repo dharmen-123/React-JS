@@ -1,10 +1,91 @@
+import Carousel from 'react-bootstrap/Carousel';
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+import { useState, useEffect } from 'react';
+import axios from 'axios';
+import { useDispatch } from 'react-redux';
 
+import s1 from "../Image/blazers1.png";
+import s2 from "../Image/blazers2.png";
+import s3 from "../Image/blazers3.png";
 
 const Blazer=()=>{
+  const [mydata, setMydata] = useState([]);
+    const dispatch= useDispatch();
+    const notify = () => toast('Wow so easy !');
+    let api="http://localhost:3000/Blazer"
+    const loadData=async()=>{
+      const response = await axios.get(api);
+      console.log(response.data);
+      setMydata(response.data);
+    }
+
+    useEffect(()=>{
+        loadData();
+    }, [])
+
+  const ans= mydata.map((key)=>{
+        return(
+            <>
+           <Card style={{ width: '18rem' }}>
+      <Card.Img variant="top" src={key.image} />
+      <Card.Body>
+        <Card.Title>{key.name}</Card.Title>
+        <Card.Text>
+        </Card.Text>
+        <Button variant="primary">Price :{key.price}</Button>
+      </Card.Body>
+    </Card>  
+            </>
+        )
+    })
+
+
+
     return(
         <>
-        <br/><br/><br/><br/>
-          <h1>Welcome to Mens Fashion Blazer</h1>
+        <br/><br/><br/>
+          <Carousel data-bs-theme="dark">
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src={s1}
+          alt="First slide" height="700px"
+        />
+        <Carousel.Caption>
+          <h5></h5>
+          <p></p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src={s2}
+          alt="Second slide" height="700px"
+        />
+        <Carousel.Caption>
+          <h5></h5>
+          <p></p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src={s3}
+          alt="Third slide" height="700px"
+        />
+        <Carousel.Caption>
+          <h5></h5>
+          <p></p>
+        </Carousel.Caption>
+      </Carousel.Item>
+    </Carousel>
+
+    <br/><br/><br/>
+         <div id="blazerdiv">
+          {ans}
+         </div>
+       
         </>
     )
 }
