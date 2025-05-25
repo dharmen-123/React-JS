@@ -5,6 +5,7 @@ import Counter from "./pages/Counter";
 import Countertool from "./pages/Countertool";
 import Theme from "./pages/Theme";
 import Contact from "./pages/Contact";
+import Todo from "./pages/Todo";
 
 
 const App=()=>{
@@ -18,6 +19,7 @@ const App=()=>{
         <Route path="counter" element={<Counter/>}/>
         <Route path="toolcounter" element={<Countertool/>}/>
         <Route path="theme" element={<Theme/>}/>
+        <Route path="todo" element={<Todo/>}/>
         <Route path="contact" element={<Contact/>}/>
        </Route>
      </Routes>

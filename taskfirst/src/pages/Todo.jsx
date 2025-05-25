@@ -29,10 +29,7 @@ const Todo=()=>{
               <tr>
                 <td> {sno}</td>
                 <td>
-                    
-                    {key.status? 
-                    (<>
-                    
+                {key.status?  (<> 
                    <span style={{color:"red", textDecoration:" line-through"}}>  {key.work}</span>    
                      </>):(<>{key.work}</>)}     
                   </td>
