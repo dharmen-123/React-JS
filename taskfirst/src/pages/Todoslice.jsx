@@ -37,6 +37,7 @@ const Todoslice = createSlice({
                 if (state.task[i].id== actions.payload.id)
                 {
                     state.task[i].work= actions.payload.work;
+
                 }
             }
         }
