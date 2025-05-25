@@ -222,3 +222,13 @@ footer{
     justify-content:center;
     gap:20px;
 }
+@media (max-width:800px){
+#carousal img {
+    height:500px;
+}
+}
+@media (max-width:550px){
+#carousal img {
+    height:400px;
+}
+}

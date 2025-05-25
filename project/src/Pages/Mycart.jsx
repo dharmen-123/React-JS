@@ -33,7 +33,7 @@ const MyCart=()=>{
              </td>
             <td>{key.price}</td>
             <td >
-                <Button variant="success" style={{fontSize:"25px"}}>{key.qnty * key.price}</Button>
+                <Button variant="success" style={{fontSize:"20px"}}>{key.qnty * key.price}</Button>
             </td>
             <td style={{fontSize:"30px"}}>
                   <Button variant="danger" style={{cursor:"pointer"}} onClick={()=>{dispatch(proRemove({id:key.id}))}}>Remove</Button>
@@ -58,7 +58,7 @@ const MyCart=()=>{
           <th> Quantity </th>
           <th> Price</th>
           <th> Total Price</th>
-          <th>Delete Item</th>
+          <th>Delete </th>
         </tr>
       </thead>
       <tbody style={{textAlign:"center",alignContent:"center" , fontSize:"25px"}}>

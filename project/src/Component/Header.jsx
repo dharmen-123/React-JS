@@ -37,12 +37,13 @@ const Header=()=>{
               <NavDropdown.Item as={Link} to="shoes">Shoes</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="watches">Watches</NavDropdown.Item>
             </NavDropdown> */}
+        <Button variant="outline-warning" onClick={()=>{navigate("/login")}}>Login</Button>
+
           </Nav>
           
         </Navbar.Collapse>
         <span id="lasticons">
-        <Button variant="outline-warning" onClick={()=>{navigate("/login")}}>Login</Button>
-        <Button variant="outline-warning" onClick={()=>{}}>Logout</Button>
+        {/* <Button variant="outline-warning" onClick={()=>{}}>Logout</Button> */}
          <div style={{display:"flex" , justifyContent:"center",margin:"-5px", color:"orange"}}>
          {cartLength }
         <FaCartArrowDown onClick={()=>{navigate("/mycart")}} style={{cursor:"pointer",alignItem:"center" , fontSize:"35px" , color:"white" , marginLeft:"-10px"}} />
