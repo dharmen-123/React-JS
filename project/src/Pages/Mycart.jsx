@@ -23,7 +23,7 @@ const MyCart=()=>{
                 <Image src= {key.image} roundedCircle width="150" height="130"/>
                 </td>
             <td>{key.name}</td>
-            <td>{key.category}</td>
+            <td><h6>{key.description}</h6></td>
             <td style={{fontSize:"20px"}}>
             <FaMinusSquare onClick={()=>{dispatch(qntyDec({id:key.id}))}} style={{cursor:"pointer"}} />
                 {key.qnty}

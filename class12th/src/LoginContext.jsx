@@ -2,6 +2,7 @@ import {createContext , useState} from "react";
 const myContext = createContext();
 
 const LoginContext=({children})=>{
+   
      const [user , setUser] = useState({name:"", auth:false});
 
      const Login=(nm)=>{

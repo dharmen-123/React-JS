@@ -8,9 +8,9 @@ import { FaCartArrowDown } from "react-icons/fa";
 import { addToCart } from '../cartSlice';
 import { ToastContainer, toast } from 'react-toastify';
  
-import s1 from "../Image/blazers1.png";
-import s2 from "../Image/blazers2.png";
-import s3 from "../Image/blazers3.png";
+import w1 from "../Image/Watchess1.png";
+import w2 from "../Image/watchess2.png";
+import w3 from "../Image/watchess3.png";
 
 const Watches=()=>{
   const [mydata, setMydata] = useState([]);
@@ -31,7 +31,7 @@ const Watches=()=>{
         return(
             <>
            <Card style={{ width: '20rem' }}>
-      <Card.Img variant="top" src={key.image} style={{height:"400px"}} />
+      <Card.Img variant="top" src={key.image} style={{height:"300px"}} />
       <Card.Body>
         <Card.Title>{key.name}</Card.Title>
         <Card.Text>
@@ -57,7 +57,7 @@ const Watches=()=>{
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src={s1}
+          src={w1}
           alt="First slide" height="700px"
         />
         <Carousel.Caption>
@@ -68,7 +68,7 @@ const Watches=()=>{
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src={s2}
+          src={w2}
           alt="Second slide" height="700px"
         />
         <Carousel.Caption>
@@ -79,7 +79,7 @@ const Watches=()=>{
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src={s3}
+          src={w3}
           alt="Third slide" height="700px"
         />
         <Carousel.Caption>
