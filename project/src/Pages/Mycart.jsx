@@ -7,10 +7,13 @@ import { FaRupeeSign } from "react-icons/fa";
 import Button from 'react-bootstrap/Button';
 import Image from 'react-bootstrap/Image';
 import { ToastContainer, toast } from 'react-toastify';
+import { useNavigate } from "react-router-dom";
+
 
 const MyCart=()=>{
     const cartData= useSelector(state=>state.mycart.cart);
     const dispatch = useDispatch();
+      const navigate = useNavigate();
    const notify = () => toast('Wow so easy !');
     let TotAmount=0;
    const ans=cartData.map((key)=>{
@@ -68,7 +71,7 @@ const MyCart=()=>{
        <br/>
           <hr />
           <h2 align="center">Total: <FaRupeeSign style={{fontSize:"25px" ,alignContent:"center"}}/>{TotAmount}
-           <Button variant="primary" style={{textAlign:"center"}}>Pay Now</Button></h2>
+           <Button variant="primary" onClick={() => navigate("/payment")}  style={{textAlign:"center"}}>Pay Now</Button></h2>
        <ToastContainer/>
         </>
     )

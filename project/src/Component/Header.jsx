@@ -23,7 +23,7 @@ const Header=()=>{
     <div id="topbar" >
          <Navbar  expand="lg" className="bg-body-#3d251e">
       <Container style={{display:"flex", justifyContent:"space-between" , width:"100%"}} >
-        <img src={weblogo} width="200px" height="60px" style={{}}/>
+        <img src={weblogo} width="200px" height="60px" onClick={()=>{navigate("/home")}}/>
         <Navbar.Toggle aria-controls="basic-navbar-nav" style={{color:"white" , backgroundColor:"white"}}/>
         <Navbar.Collapse id="basic-navbar-nav" >
           <Nav className="me-auto" style={{color:"white",zIndex:"999", position:"absolute"}}>

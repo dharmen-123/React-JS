@@ -7,6 +7,7 @@ import Signup from "./Pages/Signup";
 import Blazer from "./Pages/Blazer";
 import Shoes from "./Pages/Shoes";
 import Watches from "./Pages/Watches";
+import PaymentGateway from "./Pages/Payment";
 
 const App=()=>{
   return(
@@ -23,6 +24,7 @@ const App=()=>{
            <Route path="blazer" element={<Blazer/>} />
            <Route path="shoes" element={<Shoes/>}/>
            <Route path="watches" element={<Watches/>}/>
+           <Route path="payment" element={<PaymentGateway/>}/>
            </Route>
          </Routes>
        </BrowserRouter>

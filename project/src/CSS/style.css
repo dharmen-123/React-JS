@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -231,4 +232,105 @@ footer{
 #carousal img {
     height:400px;
 }
+}
+.payform{
+    width:70%;
+    margin:auto;
+    align-items:center;
+    /* text-align:center; */
+}
+#banksname{
+    display:flex;
+    flex-wrap:wrap;
+    
+}
+
+.payment-method {
+            transition: all 0.3s ease;
+        }
+        .payment-method:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        .payment-method.active {
+            border-color: #3b82f6;
+            background-color: #eff6ff;
+        }
+        .bank-logo {
+            filter: grayscale(100%);
+            opacity: 0.7;
+            transition: all 0.3s ease;
+        }
+        .bank-logo:hover, .bank-logo.selected {
+            filter: grayscale(0%);
+            opacity: 1;
+        }
+        .card-input:focus {
+            box-shadow: 0 0 0 1px #3b82f6;
+        }
+.payment-page {
+    min-height: 100vh;
+    background-color: #f3f4f6;
+    padding: 3rem 1rem;
+}
+
+.payment-container {
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+.payment-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.payment-title {
+    font-size: 1.875rem;
+    font-weight: bold;
+    color: #111827;
+}
+
+.payment-subtitle {
+    margin-top: 0.5rem;
+    color: #4b5563;
+}
+
+.payment-success {
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    padding: 2rem;
+    text-align: center;
+}
+
+.success-icon {
+    width: 5rem;
+    height: 5rem;
+    background-color: #d1fae5;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+}
+
+.success-icon i {
+    font-size: 1.875rem;
+    color: #059669;
+}
+
+.success-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1f2937;
+}
+
+.success-message {
+    color: #4b5563;
+    margin-bottom: 1.5rem;
+}
+
+.btn-primary {
+    padding: 0.5rem 1.5rem;
+    background-color: #2563eb;
 }
