@@ -23,7 +23,8 @@ const TrafficLight=()=>{
  const Stop=()=>{
       setrun(false)
  }
-   const changecolor=(status)=>(
+
+ const changecolor=(status)=>(
          light==status? status:'grey')
     
   return(
