@@ -1,14 +1,14 @@
 import {useState } from 'react';
 import Button from 'react-bootstrap/Button';
-
-
+import { FaCheckCircle } from "react-icons/fa";
+import { useNavigate } from 'react-router-dom';
         const banks = [
-            { id: 1, name: "HDFC Bank", code: "HDFC", icon: "https://logo.clearbit.com/hdfcbank.com" },
-            { id: 2, name: "ICICI Bank", code: "ICICI", icon: "https://logo.clearbit.com/icicibank.com" },
-            { id: 3, name: "State Bank of India", code: "SBI", icon: "https://logo.clearbit.com/sbi.co.in" },
-            { id: 4, name: "Axis Bank", code: "AXIS", icon: "https://logo.clearbit.com/axisbank.com" },
+            { id: 1, name: "HDFC ", code: "HDFC", icon: "https://logo.clearbit.com/hdfcbank.com" },
+            { id: 2, name: "ICICI", code: "ICICI", icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRilFjfB22HBgJfZGtnree_MvanJlBIwUWmyQ&s" },
+            { id: 3, name: "SBI", code: "SBI", icon: "https://logo.clearbit.com/sbi.co.in" },
+            { id: 4, name: "Axis Bank", code: "AXIS", icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHVyYonmETRWlUzaK97g0PrwubQzy77uPldQ&s" },
             { id: 5, name: "Kotak Mahindra", code: "KKBK", icon: "https://logo.clearbit.com/kotak.com" },
-            { id: 6, name: "Punjab National Bank", code: "PNB", icon: "https://logo.clearbit.com/pnbindia.in" },
+            { id: 6, name: "PNB", code: "PNB", icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ47SRovzAiA_MwJAHxwNmb--BmyfcmAAFbZA&s" },
             { id: 7, name: "Bank of Baroda", code: "BOB", icon: "https://logo.clearbit.com/bankofbaroda.in" },
             { id: 8, name: "Canara Bank", code: "CNRB", icon: "https://logo.clearbit.com/canarabank.com" }
         ];
@@ -28,6 +28,7 @@ const PaymentGateway = () => {
                 expiry: '',
                 cvv: ''
             });
+            const navigate=useNavigate();
             const [selectedBank, setSelectedBank] = useState(null);
             const [upiId, setUpiId] = useState('');
             const [selectedWallet, setSelectedWallet] = useState(null);
@@ -166,16 +167,16 @@ const PaymentGateway = () => {
                         {paymentSuccess ? (
                             <div className="bg-white rounded-lg shadow-md p-8 text-center">
                                 <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                                    <i className="fas fa-check text-3xl text-green-600"></i>
+                                    <FaCheckCircle style={{color:"green" , fontSize:"60px"}}/>
                                 </div>
                                 <h2 className="text-2xl font-bold text-gray-800 mb-2">Payment Successful!</h2>
                                 <p className="text-gray-600 mb-6">Your payment of ₹{amount.toFixed(2)} has been processed successfully.</p>
-                                <button
-                                    onClick={resetPayment}
-                                    className="px-6 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors duration-300"
+                                <Button variant="primary"
+                                    onClick={()=>{navigate("/home")}}
                                 >
                                     Make Another Payment
-                                </button>
+                                </Button>
+                                <br /><br /><br />
                             </div>
                         ) : (
                             <div className="bg-white rounded-lg shadow-md overflow-hidden">
@@ -282,15 +283,16 @@ const PaymentGateway = () => {
                                     {activeMethod === 'netbanking' && (
                                         <div className="mt-6">
                                             <label className="block text-sm font-medium text-gray-700 mb-2">Select your bank</label>
-                                            {errors.bank && <p className="mb-2 text-sm text-red-600">{errors.bank}</p>}
-                                            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                                            {errors.bank && <p className="">{errors.bank}</p>}
+                                            <div style={{display:"flex", justifyContent:"space-between", flexWrap:"wrap"}}>
                                                 {banks.map(bank => (
                                                     <div id="banksname"
+                                                        style={{display:"flex", justifyContent:"center", flexWrap:"wrap"}}
                                                         key={bank.id}
                                                         className={`p-3 border rounded-lg cursor-pointer flex flex-col items-center ${selectedBank?.id === bank.id ? 'border-blue-500 bg-blue-50' : 'border-gray-200'}`}
                                                         onClick={() => setSelectedBank(bank)}
                                                     >
-                                                    <div>
+                                                    <div >
                                                         <img width="80px"
                                                             src={bank.icon} 
                                                             alt={bank.name} 
@@ -316,11 +318,11 @@ const PaymentGateway = () => {
                                             {errors.upi && <p className="mt-1 text-sm text-red-600">{errors.upi}</p>}
                                             <div className="mt-4">
                                                 <p className="text-sm text-gray-600 mb-2">Or pay using UPI apps:</p>
-                                                <div className="flex space-x-3">
+                                                <div className="upiicon">
                                                     <img src="https://logo.clearbit.com/phonepe.com" alt="PhonePe" className="h-10 cursor-pointer opacity-70 hover:opacity-100" />
-                                                    <img src="https://logo.clearbit.com/googlepay.com" alt="Google Pay" className="h-10 cursor-pointer opacity-70 hover:opacity-100" />
+                                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHFbvhsH9vquelopvR3PcmNQoAjwlTkR7OHg&s" alt="Google Pay" className="h-10 cursor-pointer opacity-70 hover:opacity-100" />
                                                     <img src="https://logo.clearbit.com/paytm.com" alt="Paytm" className="h-10 cursor-pointer opacity-70 hover:opacity-100" />
-                                                    <img src="https://logo.clearbit.com/bhimupi.com" alt="BHIM" className="h-10 cursor-pointer opacity-70 hover:opacity-100" />
+                                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpV3SQAtUQ-R8BQMU21n4wM5V8jynGiClymQ&s" alt="BHIM" className="h-10 cursor-pointer opacity-70 hover:opacity-100" />
                                                 </div>
                                             </div>
                                         </div>
@@ -330,7 +332,7 @@ const PaymentGateway = () => {
                                         <div className="mt-6">
                                             <label className="block text-sm font-medium text-gray-700 mb-2">Select your wallet</label>
                                             {errors.wallet && <p className="mb-2 text-sm text-red-600">{errors.wallet}</p>}
-                                            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                                            <div style={{display:"flex", justifyContent:"space-between", flexWrap:"wrap"}}>
                                                 {wallets.map(wallet => (
                                                     <div 
                                                         key={wallet.id}

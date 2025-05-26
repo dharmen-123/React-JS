@@ -37,7 +37,8 @@ const Header=()=>{
               <NavDropdown.Item as={Link} to="shoes">Shoes</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="watches">Watches</NavDropdown.Item>
             </NavDropdown> */}
-        <Button variant="outline-warning" onClick={()=>{navigate("/login")}}>Login</Button>
+        <Button style={{fontSize:"25px", padding:"0px 10px 0px 10px", margin:"13px"}} 
+        variant="outline-warning" onClick={()=>{navigate("/login")}}>Login</Button>
 
           </Nav>
           

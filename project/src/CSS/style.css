@@ -238,11 +238,21 @@ footer{
     margin:auto;
     align-items:center;
     /* text-align:center; */
+    border:1px solid green;
+    border-radius:30px;
+    padding:20px;
 }
 #banksname{
     display:flex;
     flex-wrap:wrap;
-    
+
+}
+
+.upiicon{
+    img{
+        width:80px;
+        border-radius:50%;
+    }
 }
 
 .payment-method {
