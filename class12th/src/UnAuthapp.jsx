@@ -7,8 +7,10 @@ const UnAuthapp=()=>{
 
     return(
         <>
-           Enter name: <input type="text" value={text} onChange={(e)=>{setText(e.target.value)}}/>
-           <button onClick={()=>{Login(text)}}>Login</button>
+        Enter name: <input type="text" value={text} onChange={(e)=>{setText(e.target.value)}}/>
+
+        <button onClick={()=>{Login(text)}}>Login</button>
+        
         </>
     )
 }

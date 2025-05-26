@@ -6,6 +6,7 @@ const Authapp=()=>{
      return(
         <>
           <h2>  Welcome  {user.name} !</h2>
+          
           <button onClick={()=>{Logout()}}>Logout</button>
         </>
     )
