@@ -21,9 +21,9 @@ const App=()=>{
         <td>
           <button onClick={()=>{dispatch(removeTask({id:key.id}))}}>Delete</button>
           </td>
-          <td>
+        <td>
           <button onClick={()=>{dispatch(uncompleteTask({id:index}))}}>Uncomplete</button>
-          </td>
+        </td>
        </tr>
       </>
     )
